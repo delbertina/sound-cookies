@@ -1,3 +1,9 @@
+# Sound Cookies
+
+A react app for interacting with some funny sound clips that are a bit larger than a bite.
+
+--------------------
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
