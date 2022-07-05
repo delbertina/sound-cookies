@@ -1,7 +1,9 @@
 import './App.scss';
-import React from 'react';
+import React, { useState } from 'react';
+import Button from '@mui/material/Button';
 import useSound from 'use-sound';
 import dundundun from './assets/sounds/dun-dun-dun.wav';
+import { Tooltip } from '@mui/material';
   
   
 class App extends React.Component {
@@ -28,7 +30,7 @@ class App extends React.Component {
           Woah that scroll button was money, baby.<br />
           This is where the actual content will go.
         </h6>
-        <SoundButton></SoundButton>
+        <SoundButton soundUrl={dundundun} tooltip={<React.Fragment>{"Source: someone"}<br />{"Category: weird"}</React.Fragment>}></SoundButton>
       </div>
     </div>
     );
@@ -37,29 +39,37 @@ class App extends React.Component {
   executeScroll = () => this.myRef.current.scrollIntoView();
 }
 
-function SoundButton() {
-  // Make this dynamic in the future
-  const soundUrl = dundundun;
+function SoundButton({soundUrl, tooltip}) {
+  const [isOff, setIsOff] = useState({
+    state: true
+ });
 
   const [playbackRate, setPlaybackRate] = React.useState(0.75);
 
-  const [play] = useSound(soundUrl, {
+  const [play, { stop }] = useSound(soundUrl, {
     playbackRate,
     volume: 0.5,
+    onend: () => {
+      setIsOff({state: true});
+    },
   });
 
   const handleClick = () => {
-    console.log('clicked');
-    setPlaybackRate(playbackRate + 0.1);
-    play();
+    setIsOff({state: !isOff.state});
+    if (isOff.state) {
+      setPlaybackRate(playbackRate + 0.1);
+      play();
+    } else {
+      stop();
+    }
   };
 
   return (
-    <button onClick={handleClick}>
-      <span role="img" aria-label="Heart">
-      🎺
-      </span>
-    </button>
+    <Tooltip placement="top" title={tooltip}>
+      <Button variant="contained" onClick={handleClick}>
+        {isOff.state ? "⏵︎":"⏸︎"} 🎺
+      </Button>
+    </Tooltip>
   );
 }
 
