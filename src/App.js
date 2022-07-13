@@ -2,7 +2,7 @@ import './App.scss';
 import React, { useState } from 'react';
 import Button from '@mui/material/Button';
 import useSound from 'use-sound';
-import dundundun from './assets/sounds/dun-dun-dun.wav';
+import sounds from './assets/sounds/sounds.json';
 import { Tooltip } from '@mui/material';
   
   
@@ -30,7 +30,9 @@ class App extends React.Component {
           Woah that scroll button was money, baby.<br />
           This is where the actual content will go.
         </h6>
-        <SoundButton soundUrl={dundundun} tooltip={<React.Fragment>{"Source: placeholder"}<br />{"Category: placeholder"}</React.Fragment>}></SoundButton>
+        {sounds.map(sound => (
+          <SoundButton sound={sound}></SoundButton>
+        ))}
       </div>
     </div>
     );
@@ -39,14 +41,15 @@ class App extends React.Component {
   executeScroll = () => this.myRef.current.scrollIntoView();
 }
 
-function SoundButton({soundUrl, tooltip}) {
+function SoundButton({sound}) {
+  const assetURL = "/sounds/";
   const [isOff, setIsOff] = useState({
     state: true
- });
+  });
 
   const [playbackRate, setPlaybackRate] = React.useState(0.75);
 
-  const [play, { stop, duration }] = useSound(soundUrl, {
+  const [play, { stop, duration }] = useSound(process.env.PUBLIC_URL + assetURL + sound.file + '', {
     playbackRate,
     volume: 0.5,
     onend: () => {
@@ -88,9 +91,9 @@ function SoundButton({soundUrl, tooltip}) {
   };
 
   return (
-    <Tooltip placement="top" title={tooltip}>
+    <Tooltip placement="top" title={<React.Fragment>{"Source: " + sound.source}<br />{"Category: " + sound.category}</React.Fragment>}>
       <Button variant="contained" onClick={handleClick}>
-        {isOff.state ? "⏵︎":"⏸︎"} 🎺 {msToTime(duration)}
+        {isOff.state ? "⏵︎":"⏸︎"} 🎺 {sound.name} : {msToTime(duration)}
       </Button>
     </Tooltip>
   );
