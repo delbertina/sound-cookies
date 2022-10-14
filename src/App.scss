@@ -36,3 +36,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+.sound-button {
+  max-width: 250px;
+  white-space: nowrap;
+  > div {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}
