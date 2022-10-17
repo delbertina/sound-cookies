@@ -1,16 +1,8 @@
 import "./App.scss";
-import React, { useState } from "react";
-import Button from "@mui/material/Button";
-import useSound from "use-sound";
+import React from "react";
 import sounds from "./assets/sounds/sounds.json";
-import { Tooltip } from "@mui/material";
-
-interface SoundData {
-  file: string,
-  name: string,
-  category: string,
-  source: string
-}
+import { SoundData } from "./types/sound-types";
+import SoundButton from "./components/SoundButton";
 
 class App extends React.Component {
   public myRef: React.RefObject<any>;
@@ -43,70 +35,6 @@ class App extends React.Component {
   }
 
   executeScroll = () => this.myRef.current.scrollIntoView();
-}
-
-interface SoundButtonProps {
-  sound: SoundData;
-}
-
-function SoundButton(props: SoundButtonProps) {
-  const assetURL = "/sounds/";
-  const [isOff, setIsOff] = useState({
-    state: true,
-  });
-
-  const playbackRate = 1;
-
-  const [play, { stop, duration }] = useSound(
-    process.env.PUBLIC_URL + assetURL + props.sound.file + "",
-    {
-      playbackRate,
-      volume: 0.5,
-      onend: () => {
-        setIsOff({ state: true });
-      },
-    }
-  );
-
-  // format the millisecond duration to min:sec format using new pad function
-  function msToTime(s: number) {
-    var pad = (n: number, z = 2) => ("00" + n).slice(-z);
-    return pad(((s % 3.6e6) / 6e4) | 0) + ":" + pad(((s % 6e4) / 1000) | 0);
-  }
-
-  const handleClick = () => {
-    setIsOff({ state: !isOff.state });
-    if (isOff.state) {
-      play();
-    } else {
-      stop();
-    }
-  };
-
-  return (
-    <Tooltip placement="top" title={<SoundButtonHover sound={props.sound} />}>
-      <Button
-        variant="contained"
-        onClick={handleClick}
-        className="sound-button"
-      >
-        {isOff.state ? "⏵︎" : "⏸︎"} 🎺 <div>{props.sound.name}</div> :{" "}
-        {msToTime(duration ?? 0)}
-      </Button>
-    </Tooltip>
-  );
-}
-
-function SoundButtonHover(props: SoundButtonProps) {
-  return (
-    <React.Fragment>
-      {"Name: " + props.sound.name}
-      <br />
-      {"Source: " + props.sound.source}
-      <br />
-      {"Category: " + props.sound.category}
-    </React.Fragment>
-  );
 }
 
 export default App;
