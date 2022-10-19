@@ -22,13 +22,13 @@ class App extends React.Component {
         </header>
         <div className="App-body" ref={this.myRef}>
           <h6>
-            Woah that scroll button was money, baby.
-            <br />
-            This is where the actual content will go.
+            Sound List
           </h6>
-          {(sounds as SoundData[]).map((sound, i) => (
-            <SoundButton key={i} sound={sound}></SoundButton>
-          ))}
+          <div className="sound-button-list">
+            {(sounds as SoundData[]).map((sound, i) => (
+              <SoundButton key={i} sound={sound}></SoundButton>
+            ))}
+          </div>
         </div>
       </div>
     );

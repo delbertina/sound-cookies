@@ -38,11 +38,21 @@ html {
 }
 
 .sound-button {
-  max-width: 250px;
+  margin: 8px !important;
+  min-width: 200px !important;
+  max-width: 200px;
   white-space: nowrap;
   > div {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
   }
+}
+
+.sound-button-list {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
 }
