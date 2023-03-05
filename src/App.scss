@@ -18,6 +18,12 @@
   }
 }
 
+.App-header-title {
+  width: 100%;
+  background-color: goldenrod;
+  color: #23272e;
+}
+
 .App-body {
   background-color: #23272e;
   min-height: 100vh;
@@ -35,24 +41,4 @@
 
 html {
   scroll-behavior: smooth;
-}
-
-.sound-button {
-  margin: 8px !important;
-  min-width: 200px !important;
-  max-width: 200px;
-  white-space: nowrap;
-  > div {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-}
-
-.sound-button-list {
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  justify-content: center;
-  flex-wrap: wrap;
 }

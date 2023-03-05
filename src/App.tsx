@@ -1,8 +1,8 @@
 import "./App.scss";
 import React from "react";
 import sounds from "./assets/sounds/sounds.json";
-import { SoundData } from "./types/sound-types";
-import SoundButton from "./components/SoundButton";
+import SoundList from "./components/SoundList/SoundList";
+import { Button } from "@mui/material";
 
 class App extends React.Component {
   public myRef: React.RefObject<any>;
@@ -16,19 +16,14 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h1>Sound Cookies</h1>
+          <div className="App-header-title">
+            <h1>Sound Cookies</h1>
+          </div>
           <h3>Audio chunks that are more than just a bite.</h3>
-          <button onClick={this.executeScroll}>Explore ▼</button>
+          <Button variant="contained" onClick={this.executeScroll}>Begin ▼</Button>
         </header>
         <div className="App-body" ref={this.myRef}>
-          <h6>
-            Sound List
-          </h6>
-          <div className="sound-button-list">
-            {(sounds as SoundData[]).map((sound, i) => (
-              <SoundButton key={i} sound={sound}></SoundButton>
-            ))}
-          </div>
+          <SoundList SoundData={sounds}/>
         </div>
       </div>
     );

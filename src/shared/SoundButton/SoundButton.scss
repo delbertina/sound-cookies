@@ -1,0 +1,11 @@
+.sound-button {
+    margin: 8px !important;
+    min-width: 200px !important;
+    max-width: 200px;
+    white-space: nowrap;
+    > div {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }

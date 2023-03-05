@@ -4,7 +4,3 @@ export interface SoundData {
   category: string;
   source: string;
 }
-
-export interface SoundButtonProps {
-  sound: SoundData;
-}

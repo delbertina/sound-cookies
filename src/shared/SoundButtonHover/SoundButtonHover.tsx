@@ -1,5 +1,5 @@
-import { SoundButtonProps } from "../types/sound-types";
 import React from "react";
+import { SoundButtonProps } from "../SoundButton/SoundButton";
 
 function SoundButtonHover(props: SoundButtonProps) {
   return (

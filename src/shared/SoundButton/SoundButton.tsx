@@ -1,9 +1,14 @@
+import './SoundButton.scss';
 import { Button, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import useSound from "use-sound";
-import { getSoundAssetPath, msToTime } from "../common/string-handling";
-import { SoundButtonProps } from "../types/sound-types";
-import SoundButtonHover from "./SoundButtonHover";
+import { getSoundAssetPath, msToTime } from "../../common/string-handling";
+import { SoundData } from "../../types/sound-types";
+import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
+
+export interface SoundButtonProps {
+  sound: SoundData;
+}
 
 function SoundButton(props: SoundButtonProps) {
     const [isOff, setIsOff] = useState({
