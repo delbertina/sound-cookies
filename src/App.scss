@@ -42,3 +42,8 @@
 html {
   scroll-behavior: smooth;
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+}

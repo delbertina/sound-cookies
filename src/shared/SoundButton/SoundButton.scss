@@ -3,9 +3,14 @@
     min-width: 200px !important;
     max-width: 200px;
     white-space: nowrap;
-    > div {
+    justify-content: start !important;
+    > .sound-button-name {
       overflow: hidden;
       white-space: nowrap;
       text-overflow: ellipsis;
+    }
+    > .sound-button-time {
+      margin-right: 0;
+      margin-left: auto;
     }
   }

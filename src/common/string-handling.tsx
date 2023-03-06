@@ -8,3 +8,10 @@ export const getSoundAssetPath = (fileName: string): string => {
     const assetURL = "/sounds/";
     return process.env.PUBLIC_URL + assetURL + fileName + "";
 }
+
+// turn THIS into This
+export const screamToInsideVoice = (enumString: string): string => {
+  if (!enumString) return "";
+  const returnValue = enumString.toLowerCase();
+  return returnValue.charAt(0).toUpperCase() + returnValue.slice(1);
+}

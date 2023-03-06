@@ -1,14 +1,17 @@
 import React from "react";
+import { screamToInsideVoice } from "../../common/string-handling";
 import { SoundButtonProps } from "../SoundButton/SoundButton";
 
 function SoundButtonHover(props: SoundButtonProps) {
   return (
     <>
-      <strong>{"Name: " + props.sound.name}</strong>
+      <strong>{"Name: "}</strong>{props.sound.name}
       <br />
-      {"Source: " + props.sound.source}
+      <strong>{"Who: "}</strong>{screamToInsideVoice(props.sound.who)}
+      {/* <br />
+      <strong>{"Source: "}</strong>{props.sound.source}
       <br />
-      {"Category: " + props.sound.category}
+      <strong>{"Category: "}</strong>{props.sound.category} */}
     </>
   );
 }
