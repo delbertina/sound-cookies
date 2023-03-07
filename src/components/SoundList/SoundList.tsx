@@ -4,7 +4,7 @@ import { SoundData } from "../../types/sound-types";
 import SoundButton from "../../shared/SoundButton/SoundButton";
 
 export interface SoundListProps {
-  SoundData: SoundData[];
+  soundData: SoundData[];
 }
 
 class SoundList extends Component<SoundListProps> {
@@ -16,7 +16,7 @@ class SoundList extends Component<SoundListProps> {
           Sound List
         </h6>
         <div className="sound-button-list">
-          {this.props.SoundData.map((sound, i) => (
+          {this.props.soundData.map((sound, i) => (
             <SoundButton key={i} sound={sound}></SoundButton>
           ))}
         </div>

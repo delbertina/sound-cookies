@@ -3,13 +3,67 @@ import React from "react";
 import sounds from "./assets/sounds/sounds.json";
 import SoundList from "./components/SoundList/SoundList";
 import { Button } from "@mui/material";
+import SoundFilterBar from "./components/SoundFilterBar/SoundFilterBar";
+import {
+  FilterData,
+  SoundData
+} from "./types/sound-types";
 
-class App extends React.Component {
+interface AppProps {}
+
+interface AppState {
+  filterData: FilterData[];
+  soundData: SoundData[];
+}
+
+class App extends React.Component<AppProps, AppState> {
   public myRef: React.RefObject<any>;
 
   constructor(props: any) {
     super(props);
     this.myRef = React.createRef();
+    this.state = {
+      soundData: sounds as SoundData[],
+      filterData: (sounds as SoundData[])
+        .map((item) => item.who)
+        .filter((value, index, array) => array.indexOf(value) === index)
+        .map((value) => ({
+          filterWho: value,
+          filterSelected: false,
+        })),
+    };
+  }
+
+  handleFilterSelect(index: number): void {
+    console.log("handle filter", this.state, index);
+    if (index < 0 || index > this.state.filterData.length - 1) return;
+
+    const filterData = this.state.filterData.map((filter, i) =>
+      index === i
+        ? {
+            filterWho: filter.filterWho,
+            filterSelected: !filter.filterSelected,
+          }
+        : filter
+    );
+
+    const soundData = this.getFilteredSoundList(filterData);
+
+    this.setState({ filterData, soundData });
+  }
+
+  getFilteredSoundList(filterData: FilterData[]): SoundData[] {
+    const selectedFilters = filterData.filter(
+      (filter) => !!filter.filterSelected
+    );
+
+    if (!selectedFilters.length) return sounds as SoundData[];
+
+    return (sounds as SoundData[]).filter(
+      (sound) =>
+        selectedFilters.map((filter) => filter.filterWho).indexOf(sound.who) !==
+        -1
+    );
   }
 
   render() {
@@ -20,10 +74,16 @@ class App extends React.Component {
             <h1>Sound Cookies</h1>
           </div>
           <h3>Audio chunks that are more than just a bite.</h3>
-          <Button variant="contained" onClick={this.executeScroll}>Begin ▼</Button>
+          <Button variant="contained" onClick={this.executeScroll}>
+            Begin ▼
+          </Button>
         </header>
         <div className="App-body" ref={this.myRef}>
-          <SoundList SoundData={sounds}/>
+          <SoundFilterBar
+            filterData={this.state.filterData}
+            filterClicked={(index: number) => this.handleFilterSelect(index)}
+          />
+          <SoundList soundData={this.state.soundData} />
         </div>
       </div>
     );

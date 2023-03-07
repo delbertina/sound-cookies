@@ -6,6 +6,11 @@ export interface SoundData {
   source: string;
 }
 
+export interface FilterData {
+  filterWho: string;
+  filterSelected: boolean;
+}
+
 export enum WhoEmojis {
   AIRSOFT = "🌀",
   JOE = "☕",
