@@ -1,7 +1,9 @@
-// format the millisecond duration to min:sec format using new pad function
-export const msToTime = (s: number) => {
-  var pad = (n: number, z = 2) => ("00" + n).slice(-z);
-  return pad(((s % 3.6e6) / 6e4) | 0) + ":" + pad(((s % 6e4) / 1000) | 0);
+// format the millisecond duration to min:sec format using pad function
+// qround up to the nearest second to avoid 00:00 for less than 1 second
+export const msToTime = (input: number) => {
+  const inputRounded = Math.ceil(input / 1000) * 1000;
+  const pad = (n: number, z = 2) => ("00" + n).slice(-z);
+  return pad(((inputRounded % 3.6e6) / 6e4) | 0) + ":" + pad(((inputRounded % 6e4) / 1000) | 0);
 };
 
 export const getSoundAssetPath = (fileName: string): string => {
