@@ -14,6 +14,7 @@ export interface FilterData {
 export enum WhoEmojis {
   AIRSOFT = "🌀",
   JOE = "☕",
+  ROBOSHEEP = "🐑",
   SUNSHINE = "🌻",
 }
 
