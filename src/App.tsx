@@ -35,7 +35,6 @@ class App extends React.Component<AppProps, AppState> {
   }
 
   handleFilterSelect(index: number): void {
-    console.log("handle filter", this.state, index);
     if (index < 0 || index > this.state.filterData.length - 1) return;
 
     const filterData = this.state.filterData.map((filter, i) =>

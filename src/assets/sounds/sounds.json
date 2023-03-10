@@ -91,6 +91,27 @@
     "source": "placeholder"
   },
   {
+    "file": "airsoft-deez nuts-2015-01.mp3",
+    "name": "Deez Nuts",
+    "category": "",
+    "who": "AIRSOFT",
+    "source": "placeholder"
+  },
+  {
+    "file": "airsoft-eh-2015-01.mp3",
+    "name": "Eh",
+    "category": "",
+    "who": "AIRSOFT",
+    "source": "placeholder"
+  },
+  {
+    "file": "airsoft-have you heard of deez nuts-2015-01.mp3",
+    "name": "Have you heard of Deez Nuts?",
+    "category": "",
+    "who": "AIRSOFT",
+    "source": "placeholder"
+  },
+  {
     "file": "joe-and uh thats good-2015-01.mp3",
     "name": "...and uh that's good",
     "category": "",
@@ -280,8 +301,8 @@
     "source": "placeholder"
   },
   {
-    "file": "joe-oop he fell-2015-01.mp3",
-    "name": "Oop, he fell",
+    "file": "joe-opp he fell-2015-01.mp3",
+    "name": "Opp, he fell",
     "category": "",
     "who": "JOE",
     "source": "placeholder"
@@ -330,6 +351,104 @@
   },
   {
     "file": "joe-youre welcome-2015-01.mp3",
+    "name": "You're welcome",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-ahhh-2015-01.mp3",
+    "name": "Ahhh",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-aww-2015-01.mp3",
+    "name": "Aww",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-hello-2015-01.mp3",
+    "name": "Hello?",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-laugh-2015-01.mp3",
+    "name": "*laugh*",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-nice-2015-01.mp3",
+    "name": "Nice",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-no-2015-01.mp3",
+    "name": "No",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-nothin-2015-01.mp3",
+    "name": "Nothin",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-nothing at all-2015-01.mp3",
+    "name": "Nothing at all ...",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-oh gosh-2015-01.mp3",
+    "name": "Oh gosh",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-oh this is going to be great-2015-01.mp3",
+    "name": "Oh, this is going to be great",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-that just depends-2015-01.mp3",
+    "name": "That just depends",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-that seems great-2015-01.mp3",
+    "name": "That seems great",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-yea ok-2015-01.mp3",
+    "name": "Yea ok",
+    "category": "",
+    "who": "JOE",
+    "source": "placeholder"
+  },
+  {
+    "file": "joe-youre welcome-2015-02.mp3",
     "name": "You're welcome",
     "category": "",
     "who": "JOE",
@@ -394,6 +513,62 @@
   {
     "file": "sunshine-dominated it-2015-01.mp3",
     "name": "Dominated it",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-I cant personally speak for him-2015-01.mp3",
+    "name": "I can't personally speak for him",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-it possibly will be fun-2015-01.mp3",
+    "name": "It possibly will be fun",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-its pretty bad-2015-01.mp3",
+    "name": "It's pretty bad",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-strange horse-like creatures-2015-01.mp3",
+    "name": "Strange horse-like creatures",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-that is just-2015-01.mp3",
+    "name": "That is just",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-ummm-2015-01.mp3",
+    "name": "Ummm ...",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-yeah no you uh-2015-01.mp3",
+    "name": "Yeah no you uh",
+    "category": "",
+    "who": "SUNSHINE",
+    "source": "placeholder"
+  },
+  {
+    "file": "sunshine-you have just given me a great idea sir-2015-01.mp3",
+    "name": "You have just given me a great idea, sir!",
     "category": "",
     "who": "SUNSHINE",
     "source": "placeholder"
