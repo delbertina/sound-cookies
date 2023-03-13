@@ -1,11 +1,11 @@
 import "./SoundFilterBar.scss";
 import React, { Component } from "react";
-import { DefaultEmoji, FilterData, TagEmojis } from "../../types/sound-types";
-import FilterButton from "../../shared/FilterButton/FilterButton";
+import { DefaultEmoji, TagActionData, TagEmojis } from "../../types/sound-types";
+import ActionButton from "../../shared/FilterButton/ActionButton";
 import { screamToInsideVoice } from "../../common/string-handling";
 
 export interface SoundFilterBarProps {
-  filterData: FilterData[];
+  filterData: TagActionData[];
   filterClicked: (index: number) => void;
 }
 
@@ -13,20 +13,20 @@ class SoundFilterBar extends Component<SoundFilterBarProps> {
   render() {
     return (
       <div className="sound-filter-bar">
-        <h6>Sound Filters</h6>
+        <h6>Filter</h6>
         <div className="sound-filter-bar-buttons">
           {this.props.filterData.map((filter, i) => (
-            <FilterButton
+            <ActionButton
               key={i}
-              filterText={
-                (TagEmojis[filter.filterTag as keyof typeof TagEmojis] ??
+              buttonText={
+                (TagEmojis[filter.tag as keyof typeof TagEmojis] ??
                   DefaultEmoji) +
                 " " +
-                screamToInsideVoice(filter.filterTag)
+                screamToInsideVoice(filter.tag)
               }
-              filterSelected={filter.filterSelected}
-              filterClicked={() => this.props.filterClicked(i)}
-            ></FilterButton>
+              buttonSelected={filter.tagSelected}
+              buttonClicked={() => this.props.filterClicked(i)}
+            ></ActionButton>
           ))}
         </div>
       </div>

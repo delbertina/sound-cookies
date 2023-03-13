@@ -4,9 +4,9 @@ export interface SoundData {
   tags: string[];
 }
 
-export interface FilterData {
-  filterTag: string;
-  filterSelected: boolean;
+export interface TagActionData {
+  tag: string;
+  tagSelected: boolean;
 }
 
 export enum TagEmojis {
@@ -14,6 +14,13 @@ export enum TagEmojis {
   JOE = "☕",
   ROBOSHEEP = "🐑",
   SUNSHINE = "🌻",
+  NAME = "💬",
+  WHO = "👤"
+}
+
+export enum SortEmojis {
+  NAME = "💬",
+  WHO = "👤"
 }
 
 export const DefaultEmoji = "🎺";
