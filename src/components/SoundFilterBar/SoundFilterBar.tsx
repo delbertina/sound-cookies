@@ -1,6 +1,6 @@
 import "./SoundFilterBar.scss";
 import React, { Component } from "react";
-import { DefaultEmoji, FilterData, WhoEmojis } from "../../types/sound-types";
+import { DefaultEmoji, FilterData, TagEmojis } from "../../types/sound-types";
 import FilterButton from "../../shared/FilterButton/FilterButton";
 import { screamToInsideVoice } from "../../common/string-handling";
 
@@ -19,10 +19,10 @@ class SoundFilterBar extends Component<SoundFilterBarProps> {
             <FilterButton
               key={i}
               filterText={
-                (WhoEmojis[filter.filterWho as keyof typeof WhoEmojis] ??
+                (TagEmojis[filter.filterTag as keyof typeof TagEmojis] ??
                   DefaultEmoji) +
                 " " +
-                screamToInsideVoice(filter.filterWho)
+                screamToInsideVoice(filter.filterTag)
               }
               filterSelected={filter.filterSelected}
               filterClicked={() => this.props.filterClicked(i)}

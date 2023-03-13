@@ -7,11 +7,7 @@ function SoundButtonHover(props: SoundButtonProps) {
     <>
       <strong>{"Name: "}</strong>{props.sound.name}
       <br />
-      <strong>{"Who: "}</strong>{screamToInsideVoice(props.sound.who)}
-      {/* <br />
-      <strong>{"Source: "}</strong>{props.sound.source}
-      <br />
-      <strong>{"Category: "}</strong>{props.sound.category} */}
+      <strong>{"Tags: "}</strong>{props.sound.tags.map(tag => screamToInsideVoice(tag))}
     </>
   );
 }

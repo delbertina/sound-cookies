@@ -3,7 +3,7 @@ import { Button, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import useSound from "use-sound";
 import { getSoundAssetPath, msToTime } from "../../common/string-handling";
-import { DefaultEmoji, SoundData, WhoEmojis } from "../../types/sound-types";
+import { DefaultEmoji, SoundData, TagEmojis } from "../../types/sound-types";
 import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
 
 export interface SoundButtonProps {
@@ -46,7 +46,9 @@ function SoundButton(props: SoundButtonProps) {
         >
           <div className='sound-button-play'>{isOff.state ? "⏵︎" : "⏸︎"}</div>
           <div className='sound-button-emoji'>
-            {WhoEmojis[props.sound.who as keyof typeof WhoEmojis] ?? DefaultEmoji}
+            {props.sound.tags.map(tag => (
+              TagEmojis[tag as keyof typeof TagEmojis] ?? DefaultEmoji
+            ))}
           </div>
           <div className='sound-button-name'>{props.sound.name}</div> 
           <div className='sound-button-time'>

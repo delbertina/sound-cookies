@@ -4,10 +4,7 @@ import sounds from "./assets/sounds/sounds.json";
 import SoundList from "./components/SoundList/SoundList";
 import { Button } from "@mui/material";
 import SoundFilterBar from "./components/SoundFilterBar/SoundFilterBar";
-import {
-  FilterData,
-  SoundData
-} from "./types/sound-types";
+import { FilterData, SoundData } from "./types/sound-types";
 
 interface AppProps {}
 
@@ -25,10 +22,11 @@ class App extends React.Component<AppProps, AppState> {
     this.state = {
       soundData: sounds as SoundData[],
       filterData: (sounds as SoundData[])
-        .map((item) => item.who)
+        .map((item) => item.tags)
+        .reduce((accumulator, value) => accumulator.concat(value), [])
         .filter((value, index, array) => array.indexOf(value) === index)
         .map((value) => ({
-          filterWho: value,
+          filterTag: value,
           filterSelected: false,
         })),
     };
@@ -40,7 +38,7 @@ class App extends React.Component<AppProps, AppState> {
     const filterData = this.state.filterData.map((filter, i) =>
       index === i
         ? {
-            filterWho: filter.filterWho,
+            filterTag: filter.filterTag,
             filterSelected: !filter.filterSelected,
           }
         : filter
@@ -58,10 +56,11 @@ class App extends React.Component<AppProps, AppState> {
 
     if (!selectedFilters.length) return sounds as SoundData[];
 
-    return (sounds as SoundData[]).filter(
-      (sound) =>
-        selectedFilters.map((filter) => filter.filterWho).indexOf(sound.who) !==
-        -1
+    // Only looks for 1 match, future work to switch to AND instead of OR
+    return (sounds as SoundData[]).filter((sound) =>
+      selectedFilters
+        .map((filter) => filter.filterTag)
+        .some((tag) => sound.tags.indexOf(tag) >= 0)
     );
   }
 

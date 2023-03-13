@@ -1,17 +1,15 @@
 export interface SoundData {
   file: string;
   name: string;
-  who: string;
-  category: string;
-  source: string;
+  tags: string[];
 }
 
 export interface FilterData {
-  filterWho: string;
+  filterTag: string;
   filterSelected: boolean;
 }
 
-export enum WhoEmojis {
+export enum TagEmojis {
   AIRSOFT = "🌀",
   JOE = "☕",
   ROBOSHEEP = "🐑",
