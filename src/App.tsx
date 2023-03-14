@@ -32,7 +32,7 @@ class App extends React.Component<AppProps, AppState> {
       }));
     this.state = {
       soundData: sounds as SoundData[],
-      filterData: uniqueTags,
+      filterData: uniqueTags.sort((a, b) => a.tag.localeCompare(b.tag, 'en', {sensitivity: "base"})),
       sortData: Object.keys(SortEmojis).map((item, i) => ({
         tag: item,
         tagSelected: i === 0

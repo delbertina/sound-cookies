@@ -14,6 +14,7 @@ export const getSoundAssetPath = (fileName: string): string => {
 // turn THIS into This
 export const screamToInsideVoice = (enumString: string): string => {
   if (!enumString) return "";
+  if (enumString === "DELBERTINA") return "delbertina"; // my name shouldn't be capitalized
   const returnValue = enumString.toLowerCase();
   return returnValue.charAt(0).toUpperCase() + returnValue.slice(1);
 }
