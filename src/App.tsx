@@ -97,9 +97,11 @@ class App extends React.Component<AppProps, AppState> {
     }
 
     if (selectedSort?.tag === "NAME") {
-      returnSounds.sort((a, b) => a.name.localeCompare(b.name, 'en', {sensitivity: 'base'}))
+      returnSounds.sort((a, b) => a.name.localeCompare(b.name, 'en', {sensitivity: 'base'}));
     } else if (selectedSort?.tag === "WHO") {
-      returnSounds.sort((a, b) => (a.tags[0]??"").localeCompare((b.tags[0]??""), 'en', {sensitivity: 'base'}))
+      returnSounds.sort((a, b) => (a.tags[0]??"").localeCompare((b.tags[0]??""), 'en', {sensitivity: 'base'}));
+    } else if (selectedSort?.tag === "LENGTH") {
+      returnSounds.sort((a, b) => a.name.length - b.name.length); // Quick and dirty, future work to maybe make this better
     }
 
     if (!this.state.sortDirection) returnSounds.reverse();

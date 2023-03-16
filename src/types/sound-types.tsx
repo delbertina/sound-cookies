@@ -19,7 +19,8 @@ export enum TagEmojis {
 
 export enum SortEmojis {
   NAME = "💬",
-  WHO = "👤"
+  WHO = "👤",
+  LENGTH = "📏"
 }
 
 export const DefaultEmoji = "🎺";
