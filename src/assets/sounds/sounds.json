@@ -42,7 +42,7 @@
   {
     "file": "airsoft-zip-2015-01.mp3",
     "name": "Zip",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-im at the third level-2015-01.mp3",
@@ -67,7 +67,7 @@
   {
     "file": "airsoft-deez nuts-2015-01.mp3",
     "name": "Deez Nuts",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-eh-2015-01.mp3",
@@ -82,7 +82,7 @@
   {
     "file": "airsoft-burp-2015-01.mp3",
     "name": "*burp*",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-dude-2015-01.mp3",
@@ -107,12 +107,12 @@
   {
     "file": "airsoft-laugh-2015-01.mp3",
     "name": "*laugh*",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "LAUGH"]
   },
   {
     "file": "airsoft-so dramatic-2015-01.mp3",
     "name": "So dramatic",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-now I have to pee-2015-01.mp3",
@@ -137,7 +137,7 @@
   {
     "file": "airsoft-baby jesus-2015-01.mp3",
     "name": "Baby Jesus",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-I need blocks-2015-01.mp3",
@@ -147,7 +147,7 @@
   {
     "file": "airsoft-ill be there for you-2015-01.mp3",
     "name": "I'll be there for you",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "MUSICAL"]
   },
   {
     "file": "airsoft-im so tired-2015-01.mp3",
@@ -172,7 +172,7 @@
   {
     "file": "airsoft-thats crazy-2015-01.mp3",
     "name": "That's crazy",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "airsoft-1 dollar-2015-01.mp3",
@@ -182,7 +182,7 @@
   {
     "file": "airsoft-do do dodo-2015-01.mp3",
     "name": "*do do dodo*",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "MUSICAL"]
   },
   {
     "file": "airsoft-I can-2015-01.mp3",
@@ -212,7 +212,7 @@
   {
     "file": "airsoft-rekt rekt rektrekt-2015-01.mp3",
     "name": "*rekt rekt rektrekt*",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "MUSICAL"]
   },
   {
     "file": "airsoft-sooo-2015-01.mp3",
@@ -232,7 +232,7 @@
   {
     "file": "airsoft-yea I can agree with that-2015-01.mp3",
     "name": "Yea, I can agree with that",
-    "tags": ["AIRSOFT"]
+    "tags": ["AIRSOFT", "HOT"]
   },
   {
     "file": "delbertina-apparently-2015-01.mp3",
@@ -252,7 +252,7 @@
   {
     "file": "delbertina-oh-2015-01.mp3",
     "name": "Oh",
-    "tags": ["DELBERTINA"]
+    "tags": ["DELBERTINA", "HOT"]
   },
   {
     "file": "delbertina-that one thing-2015-01.mp3",
@@ -277,7 +277,7 @@
   {
     "file": "delbertina-I guess not-2015-01.mp3",
     "name": "I guess not",
-    "tags": ["DELBERTINA"]
+    "tags": ["DELBERTINA", "HOT"]
   },
   {
     "file": "joe-and uh thats good-2015-01.mp3",
@@ -367,7 +367,7 @@
   {
     "file": "joe-do do do do-2015-01.mp3",
     "name": "Do do do do",
-    "tags": ["JOE"]
+    "tags": ["JOE", "MUSICAL"]
   },
   {
     "file": "joe-hes right above you-2015-01.mp3",
@@ -387,12 +387,12 @@
   {
     "file": "joe-I probably wouldnt-2015-01.mp3",
     "name": "I probably wouldn't",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-im dead-2015-01.mp3",
     "name": "I'm dead",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-jump-2015-01.mp3",
@@ -422,7 +422,7 @@
   {
     "file": "joe-rubbing hands-2015-01.mp3",
     "name": "*rubbing hands*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-theres a guy right above you and a guy right below you-2015-01.mp3",
@@ -442,7 +442,7 @@
   {
     "file": "joe-wooow-2015-01.mp3",
     "name": "Wooow",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-you can double jump you know-2015-01.mp3",
@@ -452,7 +452,7 @@
   {
     "file": "joe-youre welcome-2015-01.mp3",
     "name": "You're welcome",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-ahhh-2015-01.mp3",
@@ -472,7 +472,7 @@
   {
     "file": "joe-laugh-2015-01.mp3",
     "name": "*laugh*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "LAUGH", "HOT"]
   },
   {
     "file": "joe-nice-2015-01.mp3",
@@ -492,7 +492,7 @@
   {
     "file": "joe-nothing at all-2015-01.mp3",
     "name": "Nothing at all ...",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-oh gosh-2015-01.mp3",
@@ -532,7 +532,7 @@
   {
     "file": "joe-be a boss-2015-01.mp3",
     "name": "Be a boss!",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-G G-2015-01.mp3",
@@ -547,7 +547,7 @@
   {
     "file": "joe-I love to kill people-2015-01.mp3",
     "name": "I love to kill people",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-its slightly delayed-2015-01.mp3",
@@ -557,17 +557,17 @@
   {
     "file": "joe-john cena theme-2015-01.mp3",
     "name": "*John Cena Theme*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "MUSICAL"]
   },
   {
     "file": "joe-laugh-2015-02.mp3",
     "name": "*laugh*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "LAUGH"]
   },
   {
     "file": "joe-next time I break-2015-01.mp3",
     "name": "Next time I break",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-oh fun-2015-01.mp3",
@@ -597,7 +597,7 @@
   {
     "file": "joe-so much freaking hype-2015-01.mp3",
     "name": "So much freaking hype!",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-what is going on back there-2015-01.mp3",
@@ -677,12 +677,12 @@
   {
     "file": "joe-get em-2015-01.mp3",
     "name": "Get em!",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-got em-2015-01.mp3",
     "name": "Got em!",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-I see ya-2015-01.mp3",
@@ -722,7 +722,7 @@
   {
     "file": "joe-where are you-2015-01.mp3",
     "name": "Where are you?",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-K C MO-2015-01.mp3",
@@ -732,12 +732,12 @@
   {
     "file": "joe-laugh-2015-03.mp3",
     "name": "*laugh*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "LAUGH"]
   },
   {
     "file": "joe-live for glory or die-2015-01.mp3",
     "name": "Live for glory or die",
-    "tags": ["JOE"]
+    "tags": ["JOE", "HOT"]
   },
   {
     "file": "joe-nice one airsoft-2015-01.mp3",
@@ -787,7 +787,7 @@
   {
     "file": "joe-laugh-2015-04.mp3",
     "name": "*laugh*",
-    "tags": ["JOE"]
+    "tags": ["JOE", "LAUGH"]
   },
   {
     "file": "joe-you mean the shortcuts-2015-01.mp3",
@@ -847,7 +847,7 @@
   {
     "file": "robosheep-what about it-2015-01.mp3",
     "name": "What about it?",
-    "tags": ["ROBOSHEEP"]
+    "tags": ["ROBOSHEEP", "HOT"]
   },
   {
     "file": "robosheep-what-2015-01.mp3",
@@ -857,7 +857,7 @@
   {
     "file": "robosheep-sigh-2015-01.mp3",
     "name": "*sigh*",
-    "tags": ["ROBOSHEEP"]
+    "tags": ["ROBOSHEEP", "HOT"]
   },
   {
     "file": "sunshine-alright-2015-01.mp3",
@@ -882,7 +882,7 @@
   {
     "file": "sunshine-please refrain from murdering-2015-01.mp3",
     "name": "Please refrain from murdering",
-    "tags": ["SUNSHINE"]
+    "tags": ["SUNSHINE", "HOT"]
   },
   {
     "file": "sunshine-po-tat-oes-2015-01.mp3",
@@ -892,7 +892,7 @@
   {
     "file": "sunshine-thats basically all you do-2015-01.mp3",
     "name": "That's basically all you do",
-    "tags": ["SUNSHINE"]
+    "tags": ["SUNSHINE", "HOT"]
   },
   {
     "file": "sunshine-yes-2015-01.mp3",
@@ -937,7 +937,7 @@
   {
     "file": "sunshine-yeah no you uh-2015-01.mp3",
     "name": "Yeah no you uh",
-    "tags": ["SUNSHINE"]
+    "tags": ["SUNSHINE", "HOT"]
   },
   {
     "file": "sunshine-you have just given me a great idea sir-2015-01.mp3",
@@ -962,7 +962,7 @@
   {
     "file": "sunshine-tell me what you love-2015-01.mp3",
     "name": "Tell me what you love",
-    "tags": ["SUNSHINE"]
+    "tags": ["SUNSHINE", "HOT"]
   },
   {
     "file": "sunshine-this is my guy-2015-01.mp3",
@@ -977,7 +977,7 @@
   {
     "file": "sunshine-you have everything really-2015-01.mp3",
     "name": "You have everything, really",
-    "tags": ["SUNSHINE"]
+    "tags": ["SUNSHINE", "HOT"]
   },
   {
     "file": "sunshine-alright alright alright-2015-01.mp3",

@@ -7,7 +7,7 @@ function SoundButtonHover(props: SoundButtonProps) {
     <>
       <strong>{"Name: "}</strong>{props.sound.name}
       <br />
-      <strong>{"Tags: "}</strong>{props.sound.tags.map(tag => screamToInsideVoice(tag))}
+      <strong>{"Tags: "}</strong>{props.sound.tags.map(tag => screamToInsideVoice(tag)).join(', ')}
     </>
   );
 }

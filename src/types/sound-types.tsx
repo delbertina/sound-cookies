@@ -10,11 +10,16 @@ export interface TagActionData {
 }
 
 export enum TagEmojis {
+  // Who
   AIRSOFT = "🌀",
   DELBERTINA = "🐠",
   JOE = "☕",
   ROBOSHEEP = "🐑",
   SUNSHINE = "🌻",
+  // Types
+  MUSICAL = "🎶",
+  LAUGH = "😂",
+  HOT = "🔥",
 }
 
 export enum SortEmojis {
