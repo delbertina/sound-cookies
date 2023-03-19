@@ -38,7 +38,7 @@ function SoundButton(props: SoundButtonProps) {
     };
   
     return (
-      <Tooltip placement="top" title={<SoundButtonHover sound={props.sound} />}>
+      <Tooltip placement="top" disableInteractive title={<SoundButtonHover sound={props.sound} />}>
         <Button
           variant="contained"
           onClick={handleClick}
