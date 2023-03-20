@@ -2,7 +2,7 @@ import "./SoundSortBar.scss";
 import React, { Component } from "react";
 import { DefaultEmoji, TagActionData, SortEmojis } from "../../types/sound-types";
 import { screamToInsideVoice } from "../../common/string-handling";
-import ActionButton from "../../shared/FilterButton/ActionButton";
+import ActionButton from "../ActionButton/ActionButton";
 
 export interface SoundSortBarProps {
   sortData: TagActionData[];

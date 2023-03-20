@@ -6,6 +6,7 @@ import { Button } from "@mui/material";
 import SoundFilterBar from "./components/SoundFilterBar/SoundFilterBar";
 import { TagActionData, SoundData, SortEmojis } from "./types/sound-types";
 import SoundSortBar from "./components/SoundSortBar/SoundSortBar";
+import SoundSelectBar from "./components/SoundSelectBar/SoundSelectBar";
 
 interface AppProps {}
 
@@ -13,7 +14,11 @@ interface AppState {
   sortData: TagActionData[];
   sortDirection: boolean;
   filterData: TagActionData[];
+  selectData: SoundData[];
   soundData: SoundData[];
+  isSorting: boolean;
+  isFiltering: boolean;
+  isSelecting: boolean;
 }
 
 class App extends React.Component<AppProps, AppState> {
@@ -32,18 +37,24 @@ class App extends React.Component<AppProps, AppState> {
       }));
     this.state = {
       soundData: sounds as SoundData[],
-      filterData: uniqueTags.sort((a, b) => a.tag.localeCompare(b.tag, 'en', {sensitivity: "base"})),
+      filterData: uniqueTags.sort((a, b) =>
+        a.tag.localeCompare(b.tag, "en", { sensitivity: "base" })
+      ),
       sortData: Object.keys(SortEmojis).map((item, i) => ({
         tag: item,
-        tagSelected: i === 0
+        tagSelected: i === 0,
       })),
-      sortDirection: true
+      selectData: [],
+      sortDirection: true,
+      isSorting: true,
+      isFiltering: true,
+      isSelecting: false,
     };
     this.updateSoundList();
   }
 
   handleSortDirectionSelect(isASC: boolean): void {
-    this.setState({ sortDirection: isASC}, this.updateSoundList);
+    this.setState({ sortDirection: isASC }, this.updateSoundList);
   }
 
   handleSortTagSelect(index: number): void {
@@ -57,7 +68,7 @@ class App extends React.Component<AppProps, AppState> {
           }
         : {
             tag: sortItem.tag,
-            tagSelected: false
+            tagSelected: false,
           }
     );
 
@@ -83,30 +94,68 @@ class App extends React.Component<AppProps, AppState> {
     const selectedFilters = this.state.filterData.filter(
       (filter) => !!filter.tagSelected
     );
-    const selectedSort = this.state.sortData.find(sortItem => sortItem.tagSelected);
+    const selectedSort = this.state.sortData.find(
+      (sortItem) => sortItem.tagSelected
+    );
 
     let returnSounds: SoundData[] = [];
 
     if (!selectedFilters.length) {
       returnSounds = sounds as SoundData[];
-    } else { // Only looks for 1 match, future work to switch to AND instead of OR
+    } else {
+      // Only looks for 1 match, future work to switch to AND instead of OR
       returnSounds = (sounds as SoundData[]).filter((sound) =>
-      selectedFilters
-        .map((filter) => filter.tag)
-        .some((tag) => sound.tags.indexOf(tag) >= 0));
+        selectedFilters
+          .map((filter) => filter.tag)
+          .some((tag) => sound.tags.indexOf(tag) >= 0)
+      );
     }
 
     if (selectedSort?.tag === "NAME") {
-      returnSounds.sort((a, b) => a.name.localeCompare(b.name, 'en', {sensitivity: 'base'}));
+      returnSounds.sort((a, b) =>
+        a.name.localeCompare(b.name, "en", { sensitivity: "base" })
+      );
     } else if (selectedSort?.tag === "WHO") {
-      returnSounds.sort((a, b) => (a.tags[0]??"").localeCompare((b.tags[0]??""), 'en', {sensitivity: 'base'}));
+      returnSounds.sort((a, b) =>
+        (a.tags[0] ?? "").localeCompare(b.tags[0] ?? "", "en", {
+          sensitivity: "base",
+        })
+      );
     } else if (selectedSort?.tag === "LENGTH") {
       returnSounds.sort((a, b) => a.name.length - b.name.length); // Quick and dirty, future work to maybe make this better
     }
 
     if (!this.state.sortDirection) returnSounds.reverse();
 
-    this.setState({soundData: returnSounds});
+    this.setState({ soundData: returnSounds });
+  }
+
+  toggleSort(): void {
+    this.setState({ isSorting: !this.state.isSorting});
+  }
+
+  toggleFilter(): void {
+    this.setState({ isFiltering: !this.state.isFiltering});
+  }
+
+  toggleSelect(): void {
+    this.setState({ isSelecting: !this.state.isSelecting });
+  }
+
+  handleSoundItemDeselect(index: number): void {
+    if (index < 0 || index > this.state.selectData.length - 1) return;
+
+    this.setState({
+      selectData: this.state.selectData.slice().splice(index, 1),
+    });
+  }
+
+  handleSoundItemSelect(index: number): void {
+    if (index < 0 || index > this.state.soundData.length - 1) return;
+
+    this.setState({
+      selectData: [...this.state.selectData, this.state.soundData[index]],
+    });
   }
 
   render() {
@@ -123,17 +172,32 @@ class App extends React.Component<AppProps, AppState> {
         </header>
         <div className="App-body" ref={this.myRef}>
           <div className="App-body-dummy"></div>
+          {this.state.isSorting &&
           <SoundSortBar
             sortData={this.state.sortData}
             sortDirection={this.state.sortDirection}
             sortClicked={(index: number) => this.handleSortTagSelect(index)}
-            sortDirectionClick={(isASC: boolean) => this.handleSortDirectionSelect(isASC)}
-          ></SoundSortBar>
+            sortDirectionClick={(isASC: boolean) =>
+              this.handleSortDirectionSelect(isASC)
+            }
+          />}
+          {this.state.isFiltering &&
           <SoundFilterBar
             filterData={this.state.filterData}
             filterClicked={(index: number) => this.handleFilterSelect(index)}
+          />}
+          {this.state.isSelecting && 
+          <SoundSelectBar
+            selectData={this.state.selectData}
+            selectClicked={(index: number) =>
+              this.handleSoundItemDeselect(index)
+            }
+          />}
+          <SoundList
+            soundData={this.state.soundData}
+            isSelecting={this.state.isSelecting}
+            soundSelected={(index) => this.handleSoundItemSelect(index)}
           />
-          <SoundList soundData={this.state.soundData} />
           <div className="App-body-dummy"></div>
         </div>
       </div>

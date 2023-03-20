@@ -1,0 +1,16 @@
+.select-button {
+    margin: 8px !important;
+    min-width: 200px !important;
+    max-width: 200px;
+    white-space: nowrap;
+    justify-content: start !important;
+    > .select-button-name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    > .select-button-time {
+      margin-right: 0;
+      margin-left: auto;
+    }
+  }
