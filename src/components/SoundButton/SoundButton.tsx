@@ -15,12 +15,9 @@ function SoundButton(props: SoundButtonProps) {
       state: true,
     });
   
-    const playbackRate = 1;
-  
     const [play, { stop, duration }] = useSound(
       getSoundAssetPath(props.sound.file),
       {
-        playbackRate,
         volume: 0.5,
         onend: () => {
           setIsOff({ state: true });

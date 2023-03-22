@@ -23,6 +23,7 @@ interface AppState {
 
 class App extends React.Component<AppProps, AppState> {
   public myRef: React.RefObject<any>;
+  executeScroll = () => this.myRef.current.scrollIntoView();
 
   constructor(props: any) {
     super(props);
@@ -203,8 +204,6 @@ class App extends React.Component<AppProps, AppState> {
       </div>
     );
   }
-
-  executeScroll = () => this.myRef.current.scrollIntoView();
 }
 
 export default App;
