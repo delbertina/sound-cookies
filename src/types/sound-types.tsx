@@ -2,6 +2,7 @@ export interface SoundData {
   file: string;
   name: string;
   tags: string[];
+  duration?: number;
 }
 
 export interface TagActionData {

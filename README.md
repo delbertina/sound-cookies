@@ -2,6 +2,36 @@
 
 A react app for interacting with some funny sound clips that are a bit larger than a bite.
 
+# Goal Features
+
+- Drag and drop sounds into selection area
+- Save and share selects via URL
+- Deeper sorting and filtering ability
+- A more automated system for importing new sounds
+
+
+# PowerShell Commands
+
+I use this command to get the duration of all the sounds when importing. It outputs json that I can then match and merge with the existing data. Rather than having a loading timer to load the duration of the sounds, just hard code it into the json file.
+
+```
+$dir = (Get-Location).tostring()
+$file = $dir + "\output.txt"
+Clear-Content  $file
+Add-Content $file "["
+Get-ChildItem $dir -Recurse -filter "*.mp3" | foreach{
+   $name = $_.Name
+   $duration = ffprobe -i $name -show_format -v quiet | select-string duration
+   $name = "{""file"":" + [char]34 + $name + [char]34 + ", "
+   $duration = $duration -replace 'duration=', ''
+   $duration = """duration"":" + $duration + "},"
+   Add-Content $file $name
+   Add-Content $file $duration
+}
+Add-Content $file "]"
+```
+
+
 --------------------
 
 # Getting Started with Create React App
