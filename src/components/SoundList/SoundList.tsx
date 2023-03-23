@@ -16,9 +16,7 @@ class SoundList extends Component<SoundListProps> {
   render() {
     return (
       <div className="sound-list-wrapper">
-        <h6>
-          Sound List
-        </h6>
+        <div className="sound-list-dummy-line"><hr /></div>
         <div className="sound-list">
           <List className="sound-button-list">
             <div className="sound-list-dummy"></div>

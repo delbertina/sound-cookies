@@ -2,11 +2,13 @@ import "./App.scss";
 import React from "react";
 import sounds from "./assets/sounds/sounds.json";
 import SoundList from "./components/SoundList/SoundList";
-import { Button } from "@mui/material";
+import { Box, Button, IconButton, SwipeableDrawer } from "@mui/material";
 import SoundFilterBar from "./components/SoundFilterBar/SoundFilterBar";
 import { TagActionData, SoundData, SortEmojis } from "./types/sound-types";
 import SoundSortBar from "./components/SoundSortBar/SoundSortBar";
 import SoundSelectBar from "./components/SoundSelectBar/SoundSelectBar";
+import { grey } from "@mui/material/colors";
+import SettingsIcon from '@mui/icons-material/Settings';
 
 interface AppProps {}
 
@@ -19,6 +21,7 @@ interface AppState {
   isSorting: boolean;
   isFiltering: boolean;
   isSelecting: boolean;
+  isSettingsOpen: boolean;
 }
 
 class App extends React.Component<AppProps, AppState> {
@@ -50,8 +53,13 @@ class App extends React.Component<AppProps, AppState> {
       isSorting: true,
       isFiltering: true,
       isSelecting: false,
+      isSettingsOpen: false,
     };
     this.updateSoundList();
+  }
+
+  handleToggleSettings(): void {
+    this.setState({ isSettingsOpen: !this.state.isSettingsOpen });
   }
 
   handleSortDirectionSelect(isASC: boolean): void {
@@ -172,7 +180,23 @@ class App extends React.Component<AppProps, AppState> {
           </Button>
         </header>
         <div className="App-body" ref={this.myRef}>
-          <div className="App-body-dummy"></div>
+          <SwipeableDrawer
+            anchor={'top'}
+            open={this.state.isSettingsOpen}
+            onClose={() => this.handleToggleSettings()}
+            onOpen={() => this.handleToggleSettings()}
+          >
+            <Box sx={{backgroundColor: grey[800], padding: 2, display: 'flex', justifyContent: 'center', gap: '16px'}}>
+              <Button variant='contained' color={this.state.isSorting ? 'info' : 'error'} onClick={() => this.toggleSort()}>Sort</Button>
+              <Button variant='contained' color={this.state.isFiltering ? 'info' : 'error'} onClick={() => this.toggleFilter()}>Filter</Button>
+              <Button variant='contained' color={this.state.isSelecting ? 'info' : 'error'} onClick={() => this.toggleSelect()}>Select</Button>
+            </Box>
+          </SwipeableDrawer>
+          <div>
+            <IconButton aria-label="settings" color="warning" onClick={() => this.handleToggleSettings()}>
+              <SettingsIcon />
+            </IconButton>
+          </div>
           {this.state.isSorting &&
           <SoundSortBar
             sortData={this.state.sortData}

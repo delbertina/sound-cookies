@@ -15,7 +15,7 @@ function ActionButton(props: ActionButtonProps) {
         variant="contained"
         onClick={() => props.buttonClicked()}
         className="action-button"
-        color={props.buttonSelected ? 'success' : 'primary'}
+        color={props.buttonSelected ? 'success' : 'info'}
       >
         {props.buttonText}
       </Button>
