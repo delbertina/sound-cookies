@@ -10,11 +10,11 @@ A react app for interacting with some funny sound clips that are a bit larger th
 - A more automated system for importing new sounds
 
 
-# PowerShell Commands
+# Useful Commands
 
 I use this command to get the duration of all the sounds when importing. It outputs json that I can then match and merge with the existing data. Rather than having a loading timer to load the duration of the sounds, just hard code it into the json file.
 
-```
+```PS
 $dir = (Get-Location).tostring()
 $file = $dir + "\output.txt"
 Clear-Content  $file
@@ -29,6 +29,19 @@ Get-ChildItem $dir -Recurse -filter "*.mp3" | foreach{
    Add-Content $file $duration
 }
 Add-Content $file "]"
+```
+
+I use the following Javascript code to merge the arrays by file name and output back as json. Honestly should probably change this to a python script, but this works for now.
+
+```JS
+const array3 = []
+array2.forEach((item, index) => {
+    const founditem = array1.find(otheritem => otheritem.file == item.file);
+    array3.push({file: item.file, name: item.name, tags: item.tags,
+    duration: founditem  ? founditem.duration : 0});
+});
+
+console.log(JSON.stringify(array3));
 ```
 
 

@@ -2,7 +2,7 @@ export interface SoundData {
   file: string;
   name: string;
   tags: string[];
-  duration?: number;
+  duration: number;
 }
 
 export interface TagActionData {
@@ -26,7 +26,7 @@ export enum TagEmojis {
 export enum SortEmojis {
   NAME = "💬",
   WHO = "👤",
-  LENGTH = "📏"
+  DURATION = "📏"
 }
 
 export const DefaultEmoji = "🎺";

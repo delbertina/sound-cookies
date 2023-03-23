@@ -122,8 +122,8 @@ class App extends React.Component<AppProps, AppState> {
           sensitivity: "base",
         })
       );
-    } else if (selectedSort?.tag === "LENGTH") {
-      returnSounds.sort((a, b) => a.name.length - b.name.length); // Quick and dirty, future work to maybe make this better
+    } else if (selectedSort?.tag === "DURATION") {
+      returnSounds.sort((a, b) => a.duration - b.duration);
     }
 
     if (!this.state.sortDirection) returnSounds.reverse();
