@@ -28,6 +28,13 @@ interface MainPageState {
 class MainPage extends React.Component<MainPageProps, MainPageState> {
   constructor(props: any) {
     super(props);
+
+    const queryParameters = new URLSearchParams(window.location.search);
+    const dataParam = queryParameters.get("data");
+    console.log('params', queryParameters, dataParam);
+    // https://developer.mozilla.org/en-US/docs/Glossary/Base64
+    // Use base64 to encode and decode the objests
+
     const uniqueTags = this.props.sounds
       .map((item) => item.tags)
       .reduce((accumulator, value) => accumulator.concat(value), [])
@@ -151,8 +158,11 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
   handleSoundItemDeselect(index: number): void {
     if (index < 0 || index > this.state.selectData.length - 1) return;
 
+    const returnArray = this.state.selectData.slice();
+    returnArray.splice(index, 1);
+    
     this.setState({
-      selectData: this.state.selectData.slice().splice(index, 1),
+      selectData: returnArray,
     });
   }
 

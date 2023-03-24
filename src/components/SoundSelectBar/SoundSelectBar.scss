@@ -1,12 +1,29 @@
-.sound-select-bar-buttons {
+.sound-select-bar-sounds {
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
+  min-width: auto;
   justify-content: center;
   flex-wrap: wrap;
 }
 
+.sound-select-bar-buttons {
+  display: flex;
+  flex-direction: row;
+  // width: 20%;
+  justify-content: start;
+  align-items: baseline;
+}
+
 .sound-select-bar {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  flex-wrap: nowrap;
+  justify-content: end;
+}
+
+.sound-select-bar-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -10,6 +10,10 @@ export interface TagActionData {
   tagSelected: boolean;
 }
 
+export interface SelectedSoundData {
+  selectedSounds: SoundData[]
+}
+
 export enum TagEmojis {
   // Who
   AIRSOFT = "🌀",
