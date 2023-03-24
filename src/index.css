@@ -15,3 +15,12 @@ code {
 .MuiButton-root {
   text-transform: unset !important;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
