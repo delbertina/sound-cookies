@@ -3,6 +3,7 @@ import React from "react";
 import { Box, Button, IconButton, SwipeableDrawer } from "@mui/material";
 import { grey } from "@mui/material/colors";
 import SettingsIcon from "@mui/icons-material/Settings";
+import ClearIcon from "@mui/icons-material/Clear";
 import { SortEmojis, SoundData, TagActionData } from "../../types/sound-types";
 import SoundSortBar from "../SoundSortBar/SoundSortBar";
 import SoundFilterBar from "../SoundFilterBar/SoundFilterBar";
@@ -174,6 +175,10 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
     });
   }
 
+  handleSelectionClear(): void {
+    this.setState({selectData: []});
+  }
+
   render() {
     return (
       <>
@@ -187,32 +192,43 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
             sx={{
               backgroundColor: grey[800],
               padding: 2,
-              display: "flex",
-              justifyContent: "center",
-              gap: "16px",
+              color: 'white',
+              textAlign: "center",
             }}
           >
-            <Button
-              variant="contained"
-              color={this.state.isSorting ? "info" : "error"}
-              onClick={() => this.toggleSort()}
-            >
-              Sort
-            </Button>
-            <Button
-              variant="contained"
-              color={this.state.isFiltering ? "info" : "error"}
-              onClick={() => this.toggleFilter()}
-            >
-              Filter
-            </Button>
-            <Button
-              variant="contained"
-              color={this.state.isSelecting ? "info" : "error"}
-              onClick={() => this.toggleSelect()}
-            >
-              Select
-            </Button>
+            <div>
+              <IconButton
+                aria-label="close"
+                color="warning"
+                onClick={() => this.handleToggleSettings()}
+              >
+                <ClearIcon />
+              </IconButton>
+            </div>
+            <h4 className="settings-title">Toggle Sections</h4>
+            <div className="settings-button-container">
+              <Button
+                variant="contained"
+                color={this.state.isSorting ? "info" : "error"}
+                onClick={() => this.toggleSort()}
+              >
+                Sort
+              </Button>
+              <Button
+                variant="contained"
+                color={this.state.isFiltering ? "info" : "error"}
+                onClick={() => this.toggleFilter()}
+              >
+                Filter
+              </Button>
+              <Button
+                variant="contained"
+                color={this.state.isSelecting ? "info" : "error"}
+                onClick={() => this.toggleSelect()}
+              >
+                Select
+              </Button>
+            </div>
           </Box>
         </SwipeableDrawer>
         <div>
@@ -246,6 +262,7 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
             selectClicked={(index: number) =>
               this.handleSoundItemDeselect(index)
             }
+            clearClicked={() => this.handleSelectionClear()}
           />
         )}
         <SoundList

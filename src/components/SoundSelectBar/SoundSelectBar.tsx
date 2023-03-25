@@ -10,6 +10,7 @@ import AddIcon from "@mui/icons-material/Add";
 export interface SoundSelectBarProps {
   selectData: SoundData[];
   selectClicked: (index: number) => void;
+  clearClicked: () => void;
 }
 
 class SoundSelectBar extends Component<SoundSelectBarProps> {
@@ -50,7 +51,7 @@ class SoundSelectBar extends Component<SoundSelectBarProps> {
             <IconButton
                 aria-label="clear"
                 color="error"
-                onClick={() => {}}
+                onClick={() => this.props.clearClicked()}
               >
               <ClearIcon />
             </IconButton>

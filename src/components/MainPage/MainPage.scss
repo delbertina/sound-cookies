@@ -2,3 +2,13 @@
   min-height: 32px;
   width: 100%;
 }
+
+.settings-button-container {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.settings-title {
+  margin-top: unset;
+}
