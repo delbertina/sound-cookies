@@ -1,41 +1,45 @@
 import "./App.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import sounds from "./assets/sounds/sounds.json";
 import { Button } from "@mui/material";
 import { SoundData } from "./types/sound-types";
 import MainPage from "./components/MainPage/MainPage";
+import { getURLDataParam } from "./common/string-handling";
 
-interface AppProps {}
+function App() {
+  let myRef: React.RefObject<any>;
+  const executeScroll = () => myRef.current.scrollIntoView();
 
-interface AppState {}
+  myRef = React.createRef();
 
-class App extends React.Component<AppProps, AppState> {
-  public myRef: React.RefObject<any>;
-  executeScroll = () => this.myRef.current.scrollIntoView();
+  const [isAlreadyScrolled, setIsAlreadyScrolled] = useState<boolean>(false);
 
-  constructor(props: any) {
-    super(props);
-    this.myRef = React.createRef();
-  }
+  useEffect(() => {
+    if (!isAlreadyScrolled) {
+      const dataParam = getURLDataParam();
+      if (!!dataParam) {
+        myRef.current.scrollIntoView();
+        setIsAlreadyScrolled(true);
+      }
+    }
+  }, [myRef, isAlreadyScrolled]);
 
-  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <div className="App-header-title">
-            <h1>Sound Cookies</h1>
-          </div>
-          <h3>Audio chunks that are more than just a bite.</h3>
-          <Button variant="contained" onClick={this.executeScroll}>
-            Begin ▼
-          </Button>
-        </header>
-        <div className="App-body" ref={this.myRef}>
-          <MainPage sounds={sounds as SoundData[]} />
+  return (
+    <div className="App">
+      <header className="App-header">
+        <div className="App-header-title">
+          <h1>Sound Cookies</h1>
         </div>
+        <h3>Audio chunks that are more than just a bite.</h3>
+        <Button variant="contained" onClick={executeScroll}>
+          Begin ▼
+        </Button>
+      </header>
+      <div className="App-body" ref={myRef}>
+        <MainPage sounds={sounds as SoundData[]} />
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default App;

@@ -1,14 +1,30 @@
 import "./MainPage.scss";
 import React from "react";
-import { Box, Button, IconButton, SwipeableDrawer } from "@mui/material";
+import {
+  Alert,
+  Box,
+  Button,
+  IconButton,
+  Snackbar,
+  SwipeableDrawer,
+} from "@mui/material";
 import { grey } from "@mui/material/colors";
 import SettingsIcon from "@mui/icons-material/Settings";
 import ClearIcon from "@mui/icons-material/Clear";
-import { SortEmojis, SoundData, TagActionData } from "../../types/sound-types";
+import {
+  SelectedSoundData,
+  SortEmojis,
+  SoundData,
+  TagActionData,
+} from "../../types/sound-types";
 import SoundSortBar from "../SoundSortBar/SoundSortBar";
 import SoundFilterBar from "../SoundFilterBar/SoundFilterBar";
 import SoundSelectBar from "../SoundSelectBar/SoundSelectBar";
 import SoundList from "../SoundList/SoundList";
+import {
+  getURLDataParam,
+  parseSharableSoundData,
+} from "../../common/string-handling";
 
 interface MainPageProps {
   sounds: SoundData[];
@@ -24,17 +40,37 @@ interface MainPageState {
   isFiltering: boolean;
   isSelecting: boolean;
   isSettingsOpen: boolean;
+  isSnackbarOpen: boolean;
 }
 
 class MainPage extends React.Component<MainPageProps, MainPageState> {
   constructor(props: any) {
     super(props);
 
-    const queryParameters = new URLSearchParams(window.location.search);
-    const dataParam = queryParameters.get("data");
-    console.log('params', queryParameters, dataParam);
-    // https://developer.mozilla.org/en-US/docs/Glossary/Base64
-    // Use base64 to encode and decode the objests
+    let isSelectionLink = false;
+    let isSelectionLinkError = false;
+    let selectionData: SoundData[] = [];
+
+    const dataParam = getURLDataParam();
+    if (!!dataParam) {
+      const returnedSoundData = parseSharableSoundData(
+        dataParam
+      ) as SelectedSoundData;
+      if (
+        !returnedSoundData.selectedSounds ||
+        !returnedSoundData.selectedSounds.length
+      ) {
+        // if we had data, but it loaded nothing throw and error
+        isSelectionLinkError = true;
+        console.log("error loading sharable link data", returnedSoundData);
+      } else {
+        // else, switch to selection mode and display loaded data
+        isSelectionLink = true;
+        // future work: make sure there are is no broken data in the loaded array
+        selectionData = returnedSoundData.selectedSounds;
+        console.log("loaded sharable link data", returnedSoundData);
+      }
+    }
 
     const uniqueTags = this.props.sounds
       .map((item) => item.tags)
@@ -53,12 +89,13 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
         tag: item,
         tagSelected: i === 0,
       })),
-      selectData: [],
+      selectData: selectionData,
       sortDirection: true,
       isSorting: true,
       isFiltering: true,
-      isSelecting: false,
+      isSelecting: isSelectionLink,
       isSettingsOpen: false,
+      isSnackbarOpen: isSelectionLinkError,
     };
     this.updateSoundList();
   }
@@ -161,7 +198,7 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
 
     const returnArray = this.state.selectData.slice();
     returnArray.splice(index, 1);
-    
+
     this.setState({
       selectData: returnArray,
     });
@@ -176,7 +213,7 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
   }
 
   handleSelectionClear(): void {
-    this.setState({selectData: []});
+    this.setState({ selectData: [] });
   }
 
   render() {
@@ -192,7 +229,7 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
             sx={{
               backgroundColor: grey[800],
               padding: 2,
-              color: 'white',
+              color: "white",
               textAlign: "center",
             }}
           >
@@ -271,6 +308,13 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
           soundSelected={(index) => this.handleSoundItemSelect(index)}
         />
         <div className="main-page-dummy"></div>
+        <Snackbar
+          open={this.state.isSnackbarOpen}
+          onClose={() => this.setState({ isSnackbarOpen: false })}
+          autoHideDuration={6000}
+        >
+          <Alert severity="error">Error loading sharable link data!</Alert>
+        </Snackbar>
       </>
     );
   }
