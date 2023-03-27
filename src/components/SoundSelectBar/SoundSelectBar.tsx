@@ -6,7 +6,7 @@ import { IconButton, Snackbar, Tooltip } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkIcon from "@mui/icons-material/Link";
 import AddIcon from "@mui/icons-material/Add";
-import { getSharableSoundLink } from "../../common/string-handling";
+import { getSharableSoundLink } from "../../common/sound-data-handling";
 
 export interface SoundSelectBarProps {
   selectData: SoundData[];

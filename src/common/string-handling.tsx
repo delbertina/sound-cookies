@@ -1,6 +1,3 @@
-import { SelectedSoundData, SoundData } from "../types/sound-types";
-import { Buffer } from "buffer";
-
 // format the millisecond duration to min:sec format using pad function
 // round up to the nearest second to avoid 00:00 for less than 1 second
 export const msToTime = (input: number) => {
@@ -16,31 +13,6 @@ export const msToTime = (input: number) => {
 export const getSoundAssetPath = (fileName: string): string => {
   const assetURL = "/sounds/";
   return process.env.PUBLIC_URL + assetURL + fileName + "";
-};
-
-export const getSharableSoundLink = (selectedSounds: SoundData[]): string => {
-  const rootURL = "https://delbertina.github.io/sound-cookies";
-  const dataParamUnencoded = JSON.stringify({
-    selectedSounds,
-  } as SelectedSoundData);
-  const dataParam = Buffer.from(dataParamUnencoded, "binary").toString(
-    "base64"
-  );
-
-  return rootURL + "/?data=" + dataParam;
-};
-
-export const parseSharableSoundData = (
-  selectedSounds: string
-): SelectedSoundData => {
-  const soundData = Buffer.from(selectedSounds, "base64").toString("binary");
-  return JSON.parse(soundData);
-};
-
-export const getURLDataParam = (): string => {
-  const queryParameters = new URLSearchParams(window.location.search);
-  const dataParam = queryParameters.get("data");
-  return dataParam ?? "";
 };
 
 // turn THIS into This

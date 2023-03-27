@@ -4,7 +4,7 @@ import sounds from "./assets/sounds/sounds.json";
 import { Button } from "@mui/material";
 import { SoundData } from "./types/sound-types";
 import MainPage from "./components/MainPage/MainPage";
-import { getURLDataParam } from "./common/string-handling";
+import { getURLDataParam } from "./common/sound-data-handling";
 
 function App() {
   let myRef: React.RefObject<any>;

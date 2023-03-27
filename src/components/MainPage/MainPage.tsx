@@ -24,7 +24,8 @@ import SoundList from "../SoundList/SoundList";
 import {
   getURLDataParam,
   parseSharableSoundData,
-} from "../../common/string-handling";
+  verifySoundData,
+} from "../../common/sound-data-handling";
 
 interface MainPageProps {
   sounds: SoundData[];
@@ -56,19 +57,27 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
       const returnedSoundData = parseSharableSoundData(
         dataParam
       ) as SelectedSoundData;
-      if (
-        !returnedSoundData.selectedSounds ||
-        !returnedSoundData.selectedSounds.length
-      ) {
+      const verifiedSoundData = verifySoundData(
+        this.props.sounds,
+        returnedSoundData.selectedSounds
+      );
+      if (!verifiedSoundData || !verifiedSoundData.length) {
         // if we had data, but it loaded nothing throw and error
         isSelectionLinkError = true;
-        console.log("error loading sharable link data", returnedSoundData);
+        console.log(
+          "error loading sharable link data",
+          returnedSoundData,
+          verifiedSoundData
+        );
       } else {
         // else, switch to selection mode and display loaded data
         isSelectionLink = true;
-        // future work: make sure there are is no broken data in the loaded array
         selectionData = returnedSoundData.selectedSounds;
-        console.log("loaded sharable link data", returnedSoundData);
+        console.log(
+          "loaded sharable link data",
+          returnedSoundData,
+          verifiedSoundData
+        );
       }
     }
 
