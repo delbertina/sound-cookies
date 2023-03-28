@@ -1,11 +1,13 @@
 import "./SoundSelectBar.scss";
-import React, { Component } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { SoundData } from "../../types/sound-types";
-import SelectButton from "../SelectButton/SelectButton";
+import SelectButton, { SelectButtonRef } from "../SelectButton/SelectButton";
 import { IconButton, Snackbar, Tooltip } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkIcon from "@mui/icons-material/Link";
 import AddIcon from "@mui/icons-material/Add";
+import PlayArrowIcon from "@mui/icons-material/PlayArrow";
+import PauseIcon from "@mui/icons-material/Pause";
 import { getSharableSoundLink } from "../../common/sound-data-handling";
 
 export interface SoundSelectBarProps {
@@ -14,41 +16,92 @@ export interface SoundSelectBarProps {
   clearClicked: () => void;
 }
 
-export interface SoundSelectBarState {
-  isSnackbarOpen: boolean;
-}
+function SoundSelectBar(props: SoundSelectBarProps) {
+  const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [currentSelectData, setCurrentSelectData] = useState<SoundData[]>(
+    props.selectData
+  );
+  let currentPlayIndex = 0;
 
-class SoundSelectBar extends Component<
-  SoundSelectBarProps,
-  SoundSelectBarState
-> {
-  constructor(props: any) {
-    super(props);
-    this.state = { isSnackbarOpen: false };
-  }
+  const soundRefs = useRef<SelectButtonRef[]>([]);
 
-  handleCopyToClipboard(): void {
-    const linkString = getSharableSoundLink(this.props.selectData);
+  useEffect(() => {
+    // if we're playing the sounds, don't allow the sound list to be edited
+    if (!isPlaying) {
+      setCurrentSelectData(props.selectData);
+      soundRefs.current = soundRefs.current.slice(0, props.selectData.length);
+    }
+  }, [props.selectData, isPlaying]);
+
+  const handleCopyToClipboard = (): void => {
+    const linkString = getSharableSoundLink(currentSelectData);
     navigator.clipboard.writeText(linkString);
-    this.setState({ isSnackbarOpen: true });
-  }
+    setIsSnackbarOpen(true);
+  };
 
-  render() {
-    return (
-      <div className="sound-select-bar-wrapper">
-        <h6>Select</h6>
-        <div className="sound-select-bar">
-          <div className="sound-select-bar-sounds">
-            {this.props.selectData.map((select, i) => (
-              <SelectButton
-                key={i}
-                sound={select}
-                buttonClicked={() => this.props.selectClicked(i)}
-              ></SelectButton>
-            ))}
-          </div>
-          <div className="sound-select-bar-buttons">
-            <Tooltip title="Add Silence">
+  const togglePlayPause = (): void => {
+    if (isPlaying) {
+      toggleCurrentPlaying();
+      setIsPlaying(false);
+    } else {
+      playSelection(0);
+      setIsPlaying(true);
+    }
+  };
+
+  const toggleCurrentPlaying = (): void => {
+    soundRefs.current[currentPlayIndex].handleClick();
+  };
+
+  const playSelection = (i: number): void => {
+    setTimeout(
+      () => {
+        currentPlayIndex = i;
+        toggleCurrentPlaying();
+        if (i + 1 < currentSelectData.length) {
+          playSelection(i + 1);
+        } else {
+          setTimeout(() => {
+            setIsPlaying(false);
+          }, currentSelectData[i].duration * 1000);
+        }
+      },
+      i ? currentSelectData[i - 1].duration * 1000 : 0
+    );
+  };
+
+  return (
+    <div className="sound-select-bar-wrapper">
+      <h6>Select</h6>
+      <div className="sound-select-bar">
+        <div className="sound-select-bar-sounds">
+          {currentSelectData.map((select, i) => (
+            <SelectButton
+              key={i}
+              // @ts-ignore
+              ref={(el) => (soundRefs.current[i] = el)}
+              sound={select}
+              disabled={isPlaying}
+              buttonClicked={() => props.selectClicked(i)}
+            ></SelectButton>
+          ))}
+        </div>
+        <div className="sound-select-bar-buttons">
+          <Tooltip title="Play Selection">
+            <div>
+              <IconButton
+                disabled={!currentSelectData.length}
+                aria-label="play selection"
+                color="success"
+                onClick={() => togglePlayPause()}
+              >
+                {isPlaying ? <PauseIcon /> : <PlayArrowIcon />}
+              </IconButton>
+            </div>
+          </Tooltip>
+          <Tooltip title="Add Silence">
+            <div>
               <IconButton
                 aria-label="add silence"
                 color="info"
@@ -56,36 +109,42 @@ class SoundSelectBar extends Component<
               >
                 <AddIcon />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Copy Link">
+            </div>
+          </Tooltip>
+          <Tooltip title="Copy Link">
+            <div>
               <IconButton
                 aria-label="link"
                 color="info"
-                onClick={() => this.handleCopyToClipboard()}
+                disabled={!currentSelectData.length}
+                onClick={() => handleCopyToClipboard()}
               >
                 <LinkIcon />
               </IconButton>
-            </Tooltip>
-            <Tooltip title="Clear">
+            </div>
+          </Tooltip>
+          <Tooltip title="Clear">
+            <div>
               <IconButton
                 aria-label="clear"
                 color="error"
-                onClick={() => this.props.clearClicked()}
+                disabled={!currentSelectData.length}
+                onClick={() => props.clearClicked()}
               >
                 <ClearIcon />
               </IconButton>
-            </Tooltip>
-          </div>
+            </div>
+          </Tooltip>
         </div>
-        <Snackbar
-          open={this.state.isSnackbarOpen}
-          onClose={() => this.setState({ isSnackbarOpen: false })}
-          autoHideDuration={2000}
-          message="Sharable link copied to clipboard!"
-        />
       </div>
-    );
-  }
+      <Snackbar
+        open={isSnackbarOpen}
+        onClose={() => setIsSnackbarOpen(false)}
+        autoHideDuration={2000}
+        message="Sharable link copied to clipboard!"
+      />
+    </div>
+  );
 }
 
 export default SoundSelectBar;
