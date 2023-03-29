@@ -1,7 +1,7 @@
 import "./SoundSelectBar.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { SoundData } from "../../types/sound-types";
-import SelectButton, { SelectButtonRef } from "../SelectButton/SelectButton";
+import SelectButton, { SelectButtonRef } from "../Buttons/SelectButton/SelectButton";
 import { IconButton, Snackbar, Tooltip } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkIcon from "@mui/icons-material/Link";

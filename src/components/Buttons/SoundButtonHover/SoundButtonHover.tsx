@@ -1,5 +1,5 @@
 import React from "react";
-import { screamToInsideVoice } from "../../common/string-handling";
+import { screamToInsideVoice } from "../../../common/string-handling";
 import { SoundButtonProps } from "../SoundButton/SoundButton";
 
 function SoundButtonHover(props: SoundButtonProps) {

@@ -1,7 +1,7 @@
 import "./SoundFilterBar.scss";
 import React, { Component } from "react";
 import { DefaultEmoji, TagActionData, TagEmojis } from "../../types/sound-types";
-import ActionButton from "../ActionButton/ActionButton";
+import ActionButton from "../Buttons/ActionButton/ActionButton";
 import { screamToInsideVoice } from "../../common/string-handling";
 
 export interface SoundFilterBarProps {

@@ -2,8 +2,8 @@ import './SoundButton.scss';
 import { Button, Tooltip } from "@mui/material";
 import React, { useState } from "react";
 import useSound from "use-sound";
-import { getSoundAssetPath, msToTime } from "../../common/string-handling";
-import { DefaultEmoji, SoundData, TagEmojis } from "../../types/sound-types";
+import { getSoundAssetPath, msToTime } from "../../../common/string-handling";
+import { DefaultEmoji, SoundData, TagEmojis } from "../../../types/sound-types";
 import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
 
 export interface SoundButtonProps {

@@ -2,8 +2,8 @@ import "./SoundList.scss";
 import React, { Component } from "react";
 import { SoundData } from "../../types/sound-types";
 import { List } from "@mui/material";
-import SoundButton from "../SoundButton/SoundButton";
-import SelectButton from "../SelectButton/SelectButton";
+import SoundButton from "../Buttons/SoundButton/SoundButton";
+import SelectButton from "../Buttons/SelectButton/SelectButton";
 
 export interface SoundListProps {
   soundData: SoundData[];

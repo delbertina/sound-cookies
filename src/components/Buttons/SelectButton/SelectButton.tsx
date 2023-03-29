@@ -1,10 +1,10 @@
 import "./SelectButton.scss";
 import { Button, Tooltip } from "@mui/material";
 import React, { forwardRef, useImperativeHandle, useState } from "react";
-import { DefaultEmoji, SoundData, TagEmojis } from "../../types/sound-types";
+import { DefaultEmoji, SoundData, TagEmojis } from "../../../types/sound-types";
 import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
 import useSound from "use-sound";
-import { getSoundAssetPath } from "../../common/string-handling";
+import { getSoundAssetPath } from "../../../common/string-handling";
 
 export interface SelectButtonProps {
   sound: SoundData;
