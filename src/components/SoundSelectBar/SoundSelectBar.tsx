@@ -2,7 +2,7 @@ import "./SoundSelectBar.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { SoundData } from "../../types/sound-types";
 import SelectButton, { SelectButtonRef } from "../Buttons/SelectButton/SelectButton";
-import { IconButton, Snackbar, Tooltip } from "@mui/material";
+import { Box, IconButton, LinearProgress, Snackbar, Tooltip } from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkIcon from "@mui/icons-material/Link";
 import AddIcon from "@mui/icons-material/Add";
@@ -19,12 +19,15 @@ export interface SoundSelectBarProps {
 function SoundSelectBar(props: SoundSelectBarProps) {
   const [isSnackbarOpen, setIsSnackbarOpen] = useState(false);
   const [isPlaying, setIsPlaying] = useState(false);
+  const [playProgress, setPlayProgress] = React.useState(0);
   const [currentSelectData, setCurrentSelectData] = useState<SoundData[]>(
     props.selectData
   );
   let currentPlayIndex = 0;
 
   const soundRefs = useRef<SelectButtonRef[]>([]);
+  const currentTotalDuration = useRef(0);
+  const counter = useRef(0);
 
   useEffect(() => {
     // if we're playing the sounds, don't allow the sound list to be edited
@@ -43,9 +46,13 @@ function SoundSelectBar(props: SoundSelectBarProps) {
   const togglePlayPause = (): void => {
     if (isPlaying) {
       toggleCurrentPlaying();
+      setPlayProgress(0);
       setIsPlaying(false);
     } else {
       playSelection(0);
+      counter.current = 0;
+      currentTotalDuration.current = currentSelectData.map(item => item.duration).reduce((sum, current) => sum + current);
+      setPlayProgress(10);
       setIsPlaying(true);
     }
   };
@@ -53,6 +60,21 @@ function SoundSelectBar(props: SoundSelectBarProps) {
   const toggleCurrentPlaying = (): void => {
     soundRefs.current[currentPlayIndex].handleClick();
   };
+
+  useEffect(() => {
+    if (counter.current < 20) {
+      counter.current += 1;
+      if (!playProgress) return;
+      const timeout = setTimeout(() => {
+        if (playProgress === 100) {
+          setPlayProgress(0);
+        } else {
+          setPlayProgress(playProgress + 5);
+        }
+      }, (currentTotalDuration.current / 20) * 1000);
+      return () => clearTimeout(timeout);
+    }
+  }, [playProgress, currentTotalDuration])
 
   const playSelection = (i: number): void => {
     setTimeout(
@@ -74,6 +96,9 @@ function SoundSelectBar(props: SoundSelectBarProps) {
   return (
     <div className="sound-select-bar-wrapper">
       <h6>Select</h6>
+      <Box sx={{ width: '80%', margin: '8px' }}>
+        <LinearProgress variant="determinate" value={playProgress} />
+      </Box>
       <div className="sound-select-bar">
         <div className="sound-select-bar-sounds">
           {currentSelectData.map((select, i) => (
