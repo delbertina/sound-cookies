@@ -1,6 +1,10 @@
 import "./SoundSortBar.scss";
-import React, { Component } from "react";
-import { DefaultEmoji, TagActionData, SortEmojis } from "../../types/sound-types";
+import React from "react";
+import {
+  DefaultEmoji,
+  TagActionData,
+  SortEmojis,
+} from "../../types/sound-types";
 import { screamToInsideVoice } from "../../common/string-handling";
 import ActionButton from "../Buttons/ActionButton/ActionButton";
 
@@ -11,39 +15,37 @@ export interface SoundSortBarProps {
   sortDirectionClick: (isASC: boolean) => void;
 }
 
-class SoundSortBar extends Component<SoundSortBarProps> {
-  render() {
-    return (
-      <div className="sound-sort-bar">
-        <h6>Sort</h6>
-        <div className="sound-sort-bar-buttons">
-          {this.props.sortData.map((sortItem, i) => (
-            <ActionButton
-              key={i}
-              buttonText={
-                (SortEmojis[sortItem.tag as keyof typeof SortEmojis] ??
-                  DefaultEmoji) +
-                " " +
-                screamToInsideVoice(sortItem.tag)
-              }
-              buttonSelected={sortItem.tagSelected}
-              buttonClicked={() => this.props.sortClicked(i)}
-            ></ActionButton>
-          ))}
+function SoundSortBar(props: SoundSortBarProps) {
+  return (
+    <div className="sound-sort-bar">
+      <h6>Sort</h6>
+      <div className="sound-sort-bar-buttons">
+        {props.sortData.map((sortItem, i) => (
           <ActionButton
-            buttonText="👆 Ascending"
-            buttonSelected={!!this.props.sortDirection}
-            buttonClicked={() => this.props.sortDirectionClick(true)}
+            key={i}
+            buttonText={
+              (SortEmojis[sortItem.tag as keyof typeof SortEmojis] ??
+                DefaultEmoji) +
+              " " +
+              screamToInsideVoice(sortItem.tag)
+            }
+            buttonSelected={sortItem.tagSelected}
+            buttonClicked={() => props.sortClicked(i)}
           ></ActionButton>
-          <ActionButton
-            buttonText="👇 Descending"
-            buttonSelected={!this.props.sortDirection}
-            buttonClicked={() => this.props.sortDirectionClick(false)}
-          ></ActionButton>
-        </div>
+        ))}
+        <ActionButton
+          buttonText="👆 Ascending"
+          buttonSelected={!!props.sortDirection}
+          buttonClicked={() => props.sortDirectionClick(true)}
+        ></ActionButton>
+        <ActionButton
+          buttonText="👇 Descending"
+          buttonSelected={!props.sortDirection}
+          buttonClicked={() => props.sortDirectionClick(false)}
+        ></ActionButton>
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 export default SoundSortBar;

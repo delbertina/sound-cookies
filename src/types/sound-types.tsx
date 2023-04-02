@@ -11,7 +11,7 @@ export interface TagActionData {
 }
 
 export interface SelectedSoundData {
-  selectedSounds: SoundData[]
+  selectedSounds: SoundData[];
 }
 
 export enum TagEmojis {
@@ -30,7 +30,7 @@ export enum TagEmojis {
 export enum SortEmojis {
   NAME = "💬",
   WHO = "👤",
-  DURATION = "📏"
+  DURATION = "📏",
 }
 
 export const DefaultEmoji = "🎺";

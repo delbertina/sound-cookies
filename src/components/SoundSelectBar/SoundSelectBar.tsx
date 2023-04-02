@@ -37,6 +37,21 @@ function SoundSelectBar(props: SoundSelectBarProps) {
     }
   }, [props.selectData, isPlaying]);
 
+  useEffect(() => {
+    if (counter.current < 20) {
+      counter.current += 1;
+      if (!playProgress) return;
+      const timeout = setTimeout(() => {
+        if (playProgress === 100) {
+          setPlayProgress(0);
+        } else {
+          setPlayProgress(playProgress + 5);
+        }
+      }, (currentTotalDuration.current / 20) * 1000);
+      return () => clearTimeout(timeout);
+    }
+  }, [playProgress, currentTotalDuration])
+
   const handleCopyToClipboard = (): void => {
     const linkString = getSharableSoundLink(currentSelectData);
     navigator.clipboard.writeText(linkString);
@@ -60,21 +75,6 @@ function SoundSelectBar(props: SoundSelectBarProps) {
   const toggleCurrentPlaying = (): void => {
     soundRefs.current[currentPlayIndex].handleClick();
   };
-
-  useEffect(() => {
-    if (counter.current < 20) {
-      counter.current += 1;
-      if (!playProgress) return;
-      const timeout = setTimeout(() => {
-        if (playProgress === 100) {
-          setPlayProgress(0);
-        } else {
-          setPlayProgress(playProgress + 5);
-        }
-      }, (currentTotalDuration.current / 20) * 1000);
-      return () => clearTimeout(timeout);
-    }
-  }, [playProgress, currentTotalDuration])
 
   const playSelection = (i: number): void => {
     setTimeout(
