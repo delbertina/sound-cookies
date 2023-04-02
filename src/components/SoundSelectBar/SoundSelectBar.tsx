@@ -1,14 +1,23 @@
 import "./SoundSelectBar.scss";
 import React, { useEffect, useRef, useState } from "react";
 import { SoundData } from "../../types/sound-types";
-import SelectButton, { SelectButtonRef } from "../Buttons/SelectButton/SelectButton";
-import { Box, IconButton, LinearProgress, Snackbar, Tooltip } from "@mui/material";
+import SelectButton, {
+  SelectButtonRef,
+} from "../Buttons/SelectButton/SelectButton";
+import {
+  Box,
+  IconButton,
+  LinearProgress,
+  Snackbar,
+  Tooltip,
+} from "@mui/material";
 import ClearIcon from "@mui/icons-material/Clear";
 import LinkIcon from "@mui/icons-material/Link";
 import AddIcon from "@mui/icons-material/Add";
 import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import { getSharableSoundLink } from "../../common/sound-data-handling";
+import { msToTime } from "../../common/string-handling";
 
 export interface SoundSelectBarProps {
   selectData: SoundData[];
@@ -50,7 +59,7 @@ function SoundSelectBar(props: SoundSelectBarProps) {
       }, (currentTotalDuration.current / 20) * 1000);
       return () => clearTimeout(timeout);
     }
-  }, [playProgress, currentTotalDuration])
+  }, [playProgress, currentTotalDuration]);
 
   const handleCopyToClipboard = (): void => {
     const linkString = getSharableSoundLink(currentSelectData);
@@ -66,7 +75,9 @@ function SoundSelectBar(props: SoundSelectBarProps) {
     } else {
       playSelection(0);
       counter.current = 0;
-      currentTotalDuration.current = currentSelectData.map(item => item.duration).reduce((sum, current) => sum + current);
+      currentTotalDuration.current = currentSelectData
+        .map((item) => item.duration)
+        .reduce((sum, current) => sum + current);
       setPlayProgress(10);
       setIsPlaying(true);
     }
@@ -96,23 +107,16 @@ function SoundSelectBar(props: SoundSelectBarProps) {
   return (
     <div className="sound-select-bar-wrapper">
       <h6>Select</h6>
-      <Box sx={{ width: '80%', margin: '8px' }}>
-        <LinearProgress variant="determinate" value={playProgress} />
-      </Box>
       <div className="sound-select-bar">
-        <div className="sound-select-bar-sounds">
-          {currentSelectData.map((select, i) => (
-            <SelectButton
-              key={i}
-              // @ts-ignore
-              ref={(el) => (soundRefs.current[i] = el)}
-              sound={select}
-              disabled={isPlaying}
-              buttonClicked={() => props.selectClicked(i)}
-            ></SelectButton>
-          ))}
-        </div>
         <div className="sound-select-bar-buttons">
+          <div>
+            {/* Sum durations in the current selection, convert to milliseconds, and format time */}
+            {msToTime(
+              props.selectData
+                .map((data) => data.duration)
+                .reduce((total, duration) => (total += duration), 0) * 1000
+            )}
+          </div>
           <Tooltip title="Play Selection">
             <div>
               <IconButton
@@ -160,6 +164,21 @@ function SoundSelectBar(props: SoundSelectBarProps) {
               </IconButton>
             </div>
           </Tooltip>
+        </div>
+        <Box sx={{ width: "100%", margin: "8px" }}>
+          <LinearProgress variant="determinate" value={playProgress} />
+        </Box>
+        <div className="sound-select-bar-sounds">
+          {currentSelectData.map((select, i) => (
+            <SelectButton
+              key={i}
+              // @ts-ignore
+              ref={(el) => (soundRefs.current[i] = el)}
+              sound={select}
+              disabled={isPlaying}
+              buttonClicked={() => props.selectClicked(i)}
+            ></SelectButton>
+          ))}
         </div>
       </div>
       <Snackbar
