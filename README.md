@@ -5,9 +5,11 @@ A react app for interacting with some funny sound clips that are a bit larger th
 # Goal Features
 
 - Drag and drop sounds into selection area
-- Save and share selects via URL
+- ~~Save and share selects via URL~~ - Done!
 - Deeper sorting and filtering ability
 - A more automated system for importing new sounds
+- Add in variable silence to selection
+- Save selection as a sound file
 
 
 # Useful Commands
