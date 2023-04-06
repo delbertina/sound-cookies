@@ -5,7 +5,13 @@
   justify-content: center;
   flex-wrap: wrap;
   overflow: auto;
+
   scrollbar-width: none;
+  -ms-overflow-style: none;
+  overflow: -moz-scrollbars-none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
   overscroll-behavior: contain;
 
   --mask: linear-gradient(to bottom, 
