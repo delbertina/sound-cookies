@@ -5,6 +5,13 @@ export interface SoundData {
   duration: number;
 }
 
+export const SoundDataSilence: SoundData = {
+  file: 'SILENCE',
+  name: 'Silence',
+  tags: [],
+  duration: 1
+};
+
 export interface TagActionData {
   tag: string;
   tagSelected: boolean;

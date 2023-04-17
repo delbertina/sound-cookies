@@ -22,6 +22,7 @@ import { msToTime } from "../../common/string-handling";
 export interface SoundSelectBarProps {
   selectData: SoundData[];
   selectClicked: (index: number) => void;
+  addSilenceClicked: () => void;
   clearClicked: () => void;
 }
 
@@ -134,7 +135,8 @@ function SoundSelectBar(props: SoundSelectBarProps) {
               <IconButton
                 aria-label="add silence"
                 color="info"
-                onClick={() => {}}
+                disabled={!currentSelectData.length}
+                onClick={() => props.addSilenceClicked()}
               >
                 <AddIcon />
               </IconButton>

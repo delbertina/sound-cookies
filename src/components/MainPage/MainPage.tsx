@@ -15,6 +15,7 @@ import {
   SelectedSoundData,
   SortEmojis,
   SoundData,
+  SoundDataSilence,
   TagActionData,
 } from "../../types/sound-types";
 import SoundSortBar from "../SoundSortBar/SoundSortBar";
@@ -221,6 +222,12 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
     });
   }
 
+  handleAddSilence(): void {
+    this.setState({
+      selectData: [...this.state.selectData, SoundDataSilence]
+    })
+  }
+
   handleSelectionClear(): void {
     this.setState({ selectData: [] });
   }
@@ -308,6 +315,7 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
             selectClicked={(index: number) =>
               this.handleSoundItemDeselect(index)
             }
+            addSilenceClicked={() => this.handleAddSilence()}
             clearClicked={() => this.handleSelectionClear()}
           />
         )}
