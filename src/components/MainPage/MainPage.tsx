@@ -223,9 +223,29 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
   }
 
   handleAddSilence(): void {
+    const newSilenceSound = JSON.parse(JSON.stringify(SoundDataSilence));
     this.setState({
-      selectData: [...this.state.selectData, SoundDataSilence]
-    })
+      selectData: [...this.state.selectData, newSilenceSound],
+    });
+  }
+
+  handleUpdateSilenceDuration(index: number, newValue: number): void {
+    // if index out of range
+    if (index < 0 || index > this.state.selectData.length - 1) return;
+    // if the user wants it removed
+    if (newValue <= 0) {
+      this.handleSoundItemDeselect(index);
+      return;
+    }
+    // if index is not silence
+    if (this.state.selectData[index].file !== SoundDataSilence.file) return;
+
+    const returnArray = this.state.selectData.slice();
+    returnArray[index].duration = newValue;
+
+    this.setState({
+      selectData: returnArray,
+    });
   }
 
   handleSelectionClear(): void {
@@ -316,6 +336,9 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
               this.handleSoundItemDeselect(index)
             }
             addSilenceClicked={() => this.handleAddSilence()}
+            updateSilenceDuration={(index: number, newValue: number) =>
+              this.handleUpdateSilenceDuration(index, newValue)
+            }
             clearClicked={() => this.handleSelectionClear()}
           />
         )}

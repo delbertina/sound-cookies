@@ -1,6 +1,6 @@
 import "./SoundSelectBar.scss";
 import React, { useEffect, useRef, useState } from "react";
-import { SoundData } from "../../types/sound-types";
+import { SoundData, SoundDataSilence } from "../../types/sound-types";
 import SelectButton, {
   SelectButtonRef,
 } from "../Buttons/SelectButton/SelectButton";
@@ -18,12 +18,14 @@ import PlayArrowIcon from "@mui/icons-material/PlayArrow";
 import PauseIcon from "@mui/icons-material/Pause";
 import { getSharableSoundLink } from "../../common/sound-data-handling";
 import { msToTime } from "../../common/string-handling";
+import SelectSilenceButton from "../Buttons/SelectSilenceButton/SelectSilenceButton";
 
 export interface SoundSelectBarProps {
   selectData: SoundData[];
   selectClicked: (index: number) => void;
   addSilenceClicked: () => void;
   clearClicked: () => void;
+  updateSilenceDuration: (index: number, newValue: number) => void;
 }
 
 function SoundSelectBar(props: SoundSelectBarProps) {
@@ -171,16 +173,30 @@ function SoundSelectBar(props: SoundSelectBarProps) {
           <LinearProgress variant="determinate" value={playProgress} />
         </Box>
         <div className="sound-select-bar-sounds">
-          {currentSelectData.map((select, i) => (
-            <SelectButton
-              key={i}
-              // @ts-ignore
-              ref={(el) => (soundRefs.current[i] = el)}
-              sound={select}
-              disabled={isPlaying}
-              buttonClicked={() => props.selectClicked(i)}
-            ></SelectButton>
-          ))}
+          {currentSelectData.map((select, i) =>
+            select.file === SoundDataSilence.file ? (
+              <SelectSilenceButton
+                key={i}
+                // @ts-ignore
+                ref={(el) => (soundRefs.current[i] = el)}
+                sound={select}
+                disabled={isPlaying}
+                buttonClicked={() => props.selectClicked(i)}
+                durationUpdated={(newValue: number) =>
+                  props.updateSilenceDuration(i, newValue)
+                }
+              ></SelectSilenceButton>
+            ) : (
+              <SelectButton
+                key={i}
+                // @ts-ignore
+                ref={(el) => (soundRefs.current[i] = el)}
+                sound={select}
+                disabled={isPlaying}
+                buttonClicked={() => props.selectClicked(i)}
+              ></SelectButton>
+            )
+          )}
         </div>
       </div>
       <Snackbar

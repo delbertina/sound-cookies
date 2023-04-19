@@ -1,0 +1,12 @@
+.select-silence-button {
+    margin: 8px !important;
+    min-width: 200px !important;
+    max-width: 200px;
+    white-space: nowrap;
+    justify-content: start !important;
+    > .select-silence-button-name {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }

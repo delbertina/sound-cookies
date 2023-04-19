@@ -41,3 +41,5 @@ export enum SortEmojis {
 }
 
 export const DefaultEmoji = "🎺";
+
+export const EditIndicationEmoji = "⚙️"
