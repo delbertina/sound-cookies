@@ -2,10 +2,10 @@ import "./SelectSilenceButton.scss";
 import { Button, Tooltip } from "@mui/material";
 import React, { forwardRef, useImperativeHandle, useState } from "react";
 import { EditIndicationEmoji, SoundData } from "../../../types/sound-types";
-import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
 import useSound from "use-sound";
 import { getSoundAssetPath } from "../../../common/string-handling";
 import SelectSilenceDialog from "../SelectSilenceDialog/SelectSilenceDialog";
+import SoundSilenceButtonHover from "../SoundSilenceButtonHover/SoundSilenceButtonHover";
 
 export interface SelectSilenceButtonProps {
   sound: SoundData;
@@ -62,7 +62,7 @@ const SelectSilenceButton = forwardRef(
         <Tooltip
           placement="top"
           disableInteractive
-          title={<SoundButtonHover sound={props.sound} />}
+          title={<SoundSilenceButtonHover sound={props.sound} />}
         >
           <div>
             <Button
