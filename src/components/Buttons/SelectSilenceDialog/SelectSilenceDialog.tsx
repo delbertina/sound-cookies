@@ -1,3 +1,4 @@
+import './SelectSilenceDialog.scss';
 import {
   Button,
   Dialog,
@@ -26,7 +27,7 @@ function SelectSilenceDialog(props: SelectSilenceDialogProps) {
     <div>
       <Dialog open={props.isOpen} onClose={() => handleClose(props.oldValue)}>
         <DialogTitle>Edit Silence</DialogTitle>
-        <DialogContent>
+        <DialogContent className="select-silence-dialog-content">
           <DialogContentText>
             Input the new duration of silence
           </DialogContentText>
@@ -46,7 +47,7 @@ function SelectSilenceDialog(props: SelectSilenceDialogProps) {
             }}
           />
         </DialogContent>
-        <DialogActions>
+        <DialogActions className="select-silence-dialog-actions">
           <Button
             variant="contained"
             color="error"
@@ -54,6 +55,7 @@ function SelectSilenceDialog(props: SelectSilenceDialogProps) {
           >
             Remove
           </Button>
+          <div style={{flex: '1 0 0'}} />
           <Button
             variant="outlined"
             color="error"
