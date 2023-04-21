@@ -2,13 +2,17 @@
 
 A react app for interacting with some funny sound clips that are a bit larger than a bite.
 
+[\>\>\> Try it out! <<<](https://delbertina.github.io/sound-cookies/)
+
+[Example link for a saved selection](https://delbertina.github.io/sound-cookies/?data=eyJzZWxlY3RlZFNvdW5kcyI6W3siZmlsZSI6ImpvZS13aGVyZSBhcmUgeW91LTIwMTUtMDEubXAzIiwibmFtZSI6IldoZXJlIGFyZSB5b3U/IiwidGFncyI6WyJKT0UiLCJIT1QiXSwiZHVyYXRpb24iOjAuNDk2MjkyfSx7ImZpbGUiOiJqb2UtY29tZSBvdmVyIGhlcmUtMjAxNS0wMS5tcDMiLCJuYW1lIjoiQ29tZSBvdmVyIGhlcmUiLCJ0YWdzIjpbIkpPRSJdLCJkdXJhdGlvbiI6MC40NzAxNjd9LHsiZmlsZSI6ImpvZS1hbmQgdWgtMjAxNS0wMS5tcDMiLCJuYW1lIjoiQW5kIHVoIiwidGFncyI6WyJKT0UiXSwiZHVyYXRpb24iOjAuNTQ4NTQyfSx7ImZpbGUiOiJqb2UtYmUgYSBib3NzLTIwMTUtMDEubXAzIiwibmFtZSI6IkJlIGEgYm9zcyEiLCJ0YWdzIjpbIkpPRSIsIkhPVCJdLCJkdXJhdGlvbiI6MC44NjIwNDJ9LHsiZmlsZSI6ImpvZS1ydWJiaW5nIGhhbmRzLTIwMTUtMDEubXAzIiwibmFtZSI6IipydWJiaW5nIGhhbmRzKiIsInRhZ3MiOlsiSk9FIiwiSE9UIl0sImR1cmF0aW9uIjowLjk0MDM3NX1dfQ==)
+
 # Goal Features
 
 - Drag and drop sounds into selection area
 - ~~Save and share selects via URL~~ - Done!
 - Deeper sorting and filtering ability
 - A more automated system for importing new sounds
-- Add in variable silence to selection
+- ~~Add in variable silence to selection~~
 - Save selection as a sound file
 
 
@@ -33,8 +37,9 @@ Get-ChildItem $dir -Recurse -filter "*.mp3" | foreach{
 Add-Content $file "]"
 ```
 
-I use the following Javascript code to merge the arrays by file name and output back as json. Honestly should probably change this to a python script, but this works for now.
+I use the following Javascript code to merge the arrays by file name and output back as json. Honestly should probably change this to a python script, but this works for now. Array 1 is new info, array 2 is existing info.
 
+Updating Existing Master List
 ```JS
 const array3 = []
 array2.forEach((item, index) => {
@@ -42,6 +47,30 @@ array2.forEach((item, index) => {
     array3.push({file: item.file, name: item.name, tags: item.tags,
     duration: founditem  ? founditem.duration : 0});
 });
+
+console.log(JSON.stringify(array3));
+```
+
+Adding New Items to Master List
+```JS
+array3 = JSON.parse(JSON.stringify(array2))
+
+array1.forEach((item, index) => {
+    array3.push({file: item.file, name: item.file, tags: [],
+    duration: item.duration});
+});
+
+function compare( a, b ) {
+  if ( a.file < b.file ){
+    return -1;
+  }
+  if ( a.file > b.file ){
+    return 1;
+  }
+  return 0;
+}
+
+array3.sort( compare );
 
 console.log(JSON.stringify(array3));
 ```

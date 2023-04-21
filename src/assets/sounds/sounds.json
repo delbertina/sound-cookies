@@ -1,111 +1,21 @@
 [
   {
-    "file": "airsoft-humm-2015-01.mp3",
-    "name": "Humm",
+    "file": "airsoft-1 dollar-2015-01.mp3",
+    "name": "1 Dollar",
     "tags": ["AIRSOFT"],
-    "duration": 1.28
-  },
-  {
-    "file": "airsoft-i dont know-2015-01.mp3",
-    "name": "I don't know",
-    "tags": ["AIRSOFT"],
-    "duration": 1.201625
-  },
-  {
-    "file": "airsoft-uhh-2015-01.mp3",
-    "name": "Uhh",
-    "tags": ["AIRSOFT"],
-    "duration": 2.377125
-  },
-  {
-    "file": "airsoft-uhhm-2015-01.mp3",
-    "name": "Uhhm",
-    "tags": ["AIRSOFT"],
-    "duration": 1.880792
-  },
-  {
-    "file": "airsoft-yawn alright-2015-01.mp3",
-    "name": "Yawn. Alright",
-    "tags": ["AIRSOFT"],
-    "duration": 2.716708
-  },
-  {
-    "file": "airsoft-we are reckin em-2015-01.mp3",
-    "name": "We are reckin' em!",
-    "tags": ["AIRSOFT"],
-    "duration": 1.1755
-  },
-  {
-    "file": "airsoft-whaaaat-2015-01.mp3",
-    "name": "Whaaaat?",
-    "tags": ["AIRSOFT"],
-    "duration": 1.044875
-  },
-  {
-    "file": "airsoft-what-2015-01.mp3",
-    "name": "What",
-    "tags": ["AIRSOFT"],
-    "duration": 1.071
-  },
-  {
-    "file": "airsoft-zip-2015-01.mp3",
-    "name": "Zip",
-    "tags": ["AIRSOFT", "HOT"],
     "duration": 0.835917
   },
   {
-    "file": "airsoft-im at the third level-2015-01.mp3",
-    "name": "I'm at the third level",
+    "file": "airsoft-85 people and I found a torch thats crazy-2015-01.mp3",
+    "name": "85 people and I found a torch. That's crazy!",
     "tags": ["AIRSOFT"],
-    "duration": 1.1755
+    "duration": 2.638333
   },
   {
-    "file": "airsoft-rip-2015-01.mp3",
-    "name": "RIP",
+    "file": "airsoft-I can-2015-01.mp3",
+    "name": "I can",
     "tags": ["AIRSOFT"],
-    "duration": 0.496292
-  },
-  {
-    "file": "airsoft-yeeap-2015-01.mp3",
-    "name": "Yeeap",
-    "tags": ["AIRSOFT"],
-    "duration": 0.496292
-  },
-  {
-    "file": "airsoft-yep-2015-01.mp3",
-    "name": "Yep",
-    "tags": ["AIRSOFT"],
-    "duration": 0.339583
-  },
-  {
-    "file": "airsoft-deez nuts-2015-01.mp3",
-    "name": "Deez Nuts",
-    "tags": ["AIRSOFT", "HOT"],
-    "duration": 0.783667
-  },
-  {
-    "file": "airsoft-eh-2015-01.mp3",
-    "name": "Eh",
-    "tags": ["AIRSOFT"],
-    "duration": 0.261208
-  },
-  {
-    "file": "airsoft-have you heard of deez nuts-2015-01.mp3",
-    "name": "Have you heard of Deez Nuts?",
-    "tags": ["AIRSOFT"],
-    "duration": 1.306083
-  },
-  {
-    "file": "airsoft-burp-2015-01.mp3",
-    "name": "*burp*",
-    "tags": ["AIRSOFT", "HOT"],
-    "duration": 0.835917
-  },
-  {
-    "file": "airsoft-dude-2015-01.mp3",
-    "name": "Dude",
-    "tags": ["AIRSOFT"],
-    "duration": 0.261208
+    "duration": 0.600792
   },
   {
     "file": "airsoft-I didnt even know the game started dude-2015-01.mp3",
@@ -120,40 +30,16 @@
     "duration": 0.417958
   },
   {
-    "file": "airsoft-josh cena-2015-01.mp3",
-    "name": "Josh Cena",
+    "file": "airsoft-I need blocks-2015-01.mp3",
+    "name": "I need blocks",
     "tags": ["AIRSOFT"],
-    "duration": 1.149375
+    "duration": 0.783667
   },
   {
-    "file": "airsoft-laugh-2015-01.mp3",
-    "name": "*laugh*",
-    "tags": ["AIRSOFT", "LAUGH"],
-    "duration": 0.470167
-  },
-  {
-    "file": "airsoft-so dramatic-2015-01.mp3",
-    "name": "So dramatic",
-    "tags": ["AIRSOFT", "HOT"],
-    "duration": 0.91425
-  },
-  {
-    "file": "airsoft-now I have to pee-2015-01.mp3",
-    "name": "Now I have to pee",
+    "file": "airsoft-I sound like a baby in this video-2015-01.mp3",
+    "name": "I sound like a baby in this video",
     "tags": ["AIRSOFT"],
-    "duration": 0.862042
-  },
-  {
-    "file": "airsoft-whose burnt ass hotdog is that-2015-01.mp3",
-    "name": "Whose burnt ass hotdog is that",
-    "tags": ["AIRSOFT"],
-    "duration": 1.671833
-  },
-  {
-    "file": "airsoft-85 people and I found a torch thats crazy-2015-01.mp3",
-    "name": "85 people and I found a torch. That's crazy!",
-    "tags": ["AIRSOFT"],
-    "duration": 2.638333
+    "duration": 1.802417
   },
   {
     "file": "airsoft-alright-2015-01.mp3",
@@ -168,10 +54,64 @@
     "duration": 1.149375
   },
   {
-    "file": "airsoft-I need blocks-2015-01.mp3",
-    "name": "I need blocks",
+    "file": "airsoft-burp-2015-01.mp3",
+    "name": "*burp*",
+    "tags": ["AIRSOFT", "HOT"],
+    "duration": 0.835917
+  },
+  {
+    "file": "airsoft-clunk clunk-2015-01.mp3",
+    "name": "Clunk clunk",
     "tags": ["AIRSOFT"],
+    "duration": 0.705292
+  },
+  {
+    "file": "airsoft-deez nuts-2015-01.mp3",
+    "name": "Deez Nuts",
+    "tags": ["AIRSOFT", "HOT"],
     "duration": 0.783667
+  },
+  {
+    "file": "airsoft-did you call someone just a gummy bear-2015-01.mp3",
+    "name": "Did you call someone just a gummy bear?",
+    "tags": ["AIRSOFT"],
+    "duration": 1.645708
+  },
+  {
+    "file": "airsoft-do do dodo-2015-01.mp3",
+    "name": "*do do dodo*",
+    "tags": ["AIRSOFT", "MUSICAL"],
+    "duration": 2.742833
+  },
+  {
+    "file": "airsoft-dude-2015-01.mp3",
+    "name": "Dude",
+    "tags": ["AIRSOFT"],
+    "duration": 0.261208
+  },
+  {
+    "file": "airsoft-eh-2015-01.mp3",
+    "name": "Eh",
+    "tags": ["AIRSOFT"],
+    "duration": 0.261208
+  },
+  {
+    "file": "airsoft-have you heard of deez nuts-2015-01.mp3",
+    "name": "Have you heard of Deez Nuts?",
+    "tags": ["AIRSOFT"],
+    "duration": 1.306083
+  },
+  {
+    "file": "airsoft-humm-2015-01.mp3",
+    "name": "Humm",
+    "tags": ["AIRSOFT"],
+    "duration": 1.28
+  },
+  {
+    "file": "airsoft-i dont know-2015-01.mp3",
+    "name": "I don't know",
+    "tags": ["AIRSOFT"],
+    "duration": 1.201625
   },
   {
     "file": "airsoft-ill be there for you-2015-01.mp3",
@@ -180,10 +120,40 @@
     "duration": 3.265292
   },
   {
+    "file": "airsoft-im at the third level-2015-01.mp3",
+    "name": "I'm at the third level",
+    "tags": ["AIRSOFT"],
+    "duration": 1.1755
+  },
+  {
     "file": "airsoft-im so tired-2015-01.mp3",
     "name": "I'm so tired",
     "tags": ["AIRSOFT"],
     "duration": 1.1755
+  },
+  {
+    "file": "airsoft-it just overpowers my voice-2015-01.mp3",
+    "name": "It just overpowers my voice",
+    "tags": ["AIRSOFT"],
+    "duration": 1.619583
+  },
+  {
+    "file": "airsoft-josh cena-2015-01.mp3",
+    "name": "Josh Cena",
+    "tags": ["AIRSOFT"],
+    "duration": 1.149375
+  },
+  {
+    "file": "airsoft-laugh-2015-01.mp3",
+    "name": "*laugh*",
+    "tags": ["AIRSOFT", "LAUGH"],
+    "duration": 0.470167
+  },
+  {
+    "file": "airsoft-lets get it-2015-01.mp3",
+    "name": "Lets get it!",
+    "tags": ["AIRSOFT"],
+    "duration": 0.835917
   },
   {
     "file": "airsoft-mega mega mega-2015-01.mp3",
@@ -204,40 +174,16 @@
     "duration": 0.679167
   },
   {
-    "file": "airsoft-thats crazy-2015-01.mp3",
-    "name": "That's crazy",
-    "tags": ["AIRSOFT", "HOT"],
-    "duration": 0.783667
-  },
-  {
-    "file": "airsoft-1 dollar-2015-01.mp3",
-    "name": "1 Dollar",
+    "file": "airsoft-no hes a hacker-2015-01.mp3",
+    "name": "No, he's a hacker",
     "tags": ["AIRSOFT"],
-    "duration": 0.835917
+    "duration": 1.044875
   },
   {
-    "file": "airsoft-do do dodo-2015-01.mp3",
-    "name": "*do do dodo*",
-    "tags": ["AIRSOFT", "MUSICAL"],
-    "duration": 2.742833
-  },
-  {
-    "file": "airsoft-I can-2015-01.mp3",
-    "name": "I can",
+    "file": "airsoft-now I have to pee-2015-01.mp3",
+    "name": "Now I have to pee",
     "tags": ["AIRSOFT"],
-    "duration": 0.600792
-  },
-  {
-    "file": "airsoft-I sound like a baby in this video-2015-01.mp3",
-    "name": "I sound like a baby in this video",
-    "tags": ["AIRSOFT"],
-    "duration": 1.802417
-  },
-  {
-    "file": "airsoft-lets get it-2015-01.mp3",
-    "name": "Lets get it!",
-    "tags": ["AIRSOFT"],
-    "duration": 0.835917
+    "duration": 0.862042
   },
   {
     "file": "airsoft-oh god the squeak is so bad-2015-01.mp3",
@@ -258,10 +204,40 @@
     "duration": 3.395917
   },
   {
+    "file": "airsoft-rip-2015-01.mp3",
+    "name": "RIP",
+    "tags": ["AIRSOFT"],
+    "duration": 0.496292
+  },
+  {
+    "file": "airsoft-so dramatic-2015-01.mp3",
+    "name": "So dramatic",
+    "tags": ["AIRSOFT", "HOT"],
+    "duration": 0.91425
+  },
+  {
+    "file": "airsoft-so it doesnt look like anything-2015-01.mp3",
+    "name": "So it doesn't look like anything",
+    "tags": ["AIRSOFT"],
+    "duration": 1.306083
+  },
+  {
     "file": "airsoft-sooo-2015-01.mp3",
     "name": "Sooo",
     "tags": ["AIRSOFT"],
     "duration": 1.044875
+  },
+  {
+    "file": "airsoft-thats crazy-2015-01.mp3",
+    "name": "That's crazy",
+    "tags": ["AIRSOFT", "HOT"],
+    "duration": 0.783667
+  },
+  {
+    "file": "airsoft-the quest-2015-01.mp3",
+    "name": "The quest",
+    "tags": ["AIRSOFT"],
+    "duration": 0.783667
   },
   {
     "file": "airsoft-the squeak-2015-01.mp3",
@@ -270,10 +246,70 @@
     "duration": 0.679167
   },
   {
+    "file": "airsoft-uhh-2015-01.mp3",
+    "name": "Uhh",
+    "tags": ["AIRSOFT"],
+    "duration": 2.377125
+  },
+  {
+    "file": "airsoft-uhhm-2015-01.mp3",
+    "name": "Uhhm",
+    "tags": ["AIRSOFT"],
+    "duration": 1.880792
+  },
+  {
+    "file": "airsoft-wait a minute-2015-01.mp3",
+    "name": "Wait a minute",
+    "tags": ["AIRSOFT"],
+    "duration": 0.679167
+  },
+  {
+    "file": "airsoft-wait-2015-01.mp3",
+    "name": "Wait",
+    "tags": ["AIRSOFT"],
+    "duration": 0.339583
+  },
+  {
+    "file": "airsoft-we are reckin em-2015-01.mp3",
+    "name": "We are reckin' em!",
+    "tags": ["AIRSOFT"],
+    "duration": 1.1755
+  },
+  {
     "file": "airsoft-were 5 hours in-2015-01.mp3",
     "name": "We're 5 hours in",
     "tags": ["AIRSOFT"],
     "duration": 1.332208
+  },
+  {
+    "file": "airsoft-were gonna start it slow with a little bit of slow action-2015-01.mp3",
+    "name": "We're gonna start it slow with a little bit of slow action",
+    "tags": ["AIRSOFT"],
+    "duration": 3.265292
+  },
+  {
+    "file": "airsoft-whaaaat-2015-01.mp3",
+    "name": "Whaaaat?",
+    "tags": ["AIRSOFT"],
+    "duration": 1.044875
+  },
+  {
+    "file": "airsoft-what-2015-01.mp3",
+    "name": "What",
+    "tags": ["AIRSOFT"],
+    "duration": 1.071
+  },
+  {
+    "file": "airsoft-whose burnt ass hotdog is that-2015-01.mp3",
+    "name": "Whose burnt ass hotdog is that",
+    "tags": ["AIRSOFT"],
+    "duration": 1.671833
+  },
+  {
+    "file": "airsoft-yawn alright-2015-01.mp3",
+    "name": "Yawn. Alright",
+    "tags": ["AIRSOFT"],
+    "duration": 2.716708
   },
   {
     "file": "airsoft-yea I can agree with that-2015-01.mp3",
@@ -282,10 +318,52 @@
     "duration": 1.201625
   },
   {
+    "file": "airsoft-yeeap-2015-01.mp3",
+    "name": "Yeeap",
+    "tags": ["AIRSOFT"],
+    "duration": 0.496292
+  },
+  {
+    "file": "airsoft-yep-2015-01.mp3",
+    "name": "Yep",
+    "tags": ["AIRSOFT"],
+    "duration": 0.339583
+  },
+  {
+    "file": "airsoft-yum that music-2015-01.mp3",
+    "name": "Yum, that music",
+    "tags": ["AIRSOFT"],
+    "duration": 1.1755
+  },
+  {
+    "file": "airsoft-zip-2015-01.mp3",
+    "name": "Zip",
+    "tags": ["AIRSOFT", "HOT"],
+    "duration": 0.835917
+  },
+  {
+    "file": "delbertina-I dont hear anything-2015-01.mp3",
+    "name": "I don't hear anything",
+    "tags": ["DELBERTINA"],
+    "duration": 0.679167
+  },
+  {
+    "file": "delbertina-I guess not-2015-01.mp3",
+    "name": "I guess not",
+    "tags": ["DELBERTINA", "HOT"],
+    "duration": 0.679167
+  },
+  {
     "file": "delbertina-apparently-2015-01.mp3",
     "name": "Apparently",
     "tags": ["DELBERTINA"],
     "duration": 0.548542
+  },
+  {
+    "file": "delbertina-hey guys airsoft220 here-2015-01.mp3",
+    "name": "Hey guys, Airsoft220 here",
+    "tags": ["DELBERTINA"],
+    "duration": 1.567333
   },
   {
     "file": "delbertina-im excited-2015-01.mp3",
@@ -312,82 +390,76 @@
     "duration": 0.862042
   },
   {
+    "file": "delbertina-theyre called bro-ssages-2015-01.mp3",
+    "name": "They're called bro-ssages",
+    "tags": ["DELBERTINA"],
+    "duration": 1.071
+  },
+  {
     "file": "delbertina-ugggh-2015-01.mp3",
     "name": "Uggh",
     "tags": ["DELBERTINA"],
     "duration": 0.600792
   },
   {
-    "file": "delbertina-hey guys airsoft220 here-2015-01.mp3",
-    "name": "Hey guys, Airsoft220 here",
+    "file": "delbertina-what are you talking about-2015-01.mp3",
+    "name": "What are you talking about?",
     "tags": ["DELBERTINA"],
-    "duration": 1.567333
+    "duration": 0.574667
   },
   {
-    "file": "delbertina-I dont hear anything-2015-01.mp3",
-    "name": "I don't hear anything",
+    "file": "delbertina-you talking about the massage theyre giving each other-2015-01.mp3",
+    "name": "You talking about the massage theyre giving each other?",
     "tags": ["DELBERTINA"],
-    "duration": 0.679167
+    "duration": 1.776292
   },
   {
-    "file": "delbertina-I guess not-2015-01.mp3",
-    "name": "I guess not",
-    "tags": ["DELBERTINA", "HOT"],
-    "duration": 0.679167
+    "file": "joe-1 dollar-2015-01.mp3",
+    "name": "1 Dollar",
+    "tags": ["JOE"],
+    "duration": 0.91425
   },
   {
-    "file": "joe-and uh thats good-2015-01.mp3",
-    "name": "And uh that's good",
+    "file": "joe-4 years or so-2015-01.mp3",
+    "name": "4 years or so",
+    "tags": ["JOE"],
+    "duration": 0.862042
+  },
+  {
+    "file": "joe-5 minute break-2015-01.mp3",
+    "name": "5 minute break",
+    "tags": ["JOE"],
+    "duration": 0.731417
+  },
+  {
+    "file": "joe-G G-2015-01.mp3",
+    "name": "G G",
+    "tags": ["JOE"],
+    "duration": 0.705292
+  },
+  {
+    "file": "joe-I am armored-2015-01.mp3",
+    "name": "I am armored",
     "tags": ["JOE"],
     "duration": 1.22775
   },
   {
-    "file": "joe-hurrmmph-2015-01.mp3",
-    "name": "Hurrmph",
+    "file": "joe-I can see all of them-2015-01.mp3",
+    "name": "I can see all of them",
     "tags": ["JOE"],
-    "duration": 1.985292
+    "duration": 1.071
   },
   {
-    "file": "joe-ooo ooo-2015-01.mp3",
-    "name": "Ooo ooo",
+    "file": "joe-I dont-2015-01.mp3",
+    "name": "I don't",
     "tags": ["JOE"],
-    "duration": 0.574667
+    "duration": 0.365708
   },
   {
-    "file": "joe-trying to figure this out-2015-01.mp3",
-    "name": "Trying to figure this out",
+    "file": "joe-I got winner-2015-01.mp3",
+    "name": "I got winner",
     "tags": ["JOE"],
-    "duration": 1.149375
-  },
-  {
-    "file": "joe-we got a lotta options-2015-01.mp3",
-    "name": "We got a lotta options",
-    "tags": ["JOE"],
-    "duration": 1.828542
-  },
-  {
-    "file": "joe-what game do you want to play-2015-01.mp3",
-    "name": "What game do you want to play",
-    "tags": ["JOE"],
-    "duration": 1.01875
-  },
-  {
-    "file": "joe-aww but thats more fun-2015-01.mp3",
-    "name": "Aww, but that's more fun!",
-    "tags": ["JOE"],
-    "duration": 1.671833
-  },
-  {
-    "file": "joe-fun-2015-01.mp3",
-    "name": "Fun",
-    "tags": ["JOE"],
-    "duration": 0.496292
-  },
-  {
-    "file": "joe-hey airsoft where are you-2015-01.mp3",
-    "name": "Hey Airsoft! Where are you?",
-    "tags": ["JOE"],
-    "duration": 1.384458
+    "duration": 1.097125
   },
   {
     "file": "joe-I just blasted people-2015-01.mp3",
@@ -396,22 +468,40 @@
     "duration": 1.149375
   },
   {
-    "file": "joe-lets do this-2015-01.mp3",
-    "name": "Let's do this!",
-    "tags": ["JOE"],
-    "duration": 1.01875
+    "file": "joe-I love to kill people-2015-01.mp3",
+    "name": "I love to kill people",
+    "tags": ["JOE", "HOT"],
+    "duration": 1.201625
   },
   {
-    "file": "joe-lets go-2015-01.mp3",
-    "name": "Let's go!",
-    "tags": ["JOE"],
-    "duration": 0.548542
+    "file": "joe-I probably wouldnt-2015-01.mp3",
+    "name": "I probably wouldn't",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.91425
   },
   {
-    "file": "joe-ok how did I do that-2015-01.mp3",
-    "name": "Ok, how did I do that?",
+    "file": "joe-I see ya-2015-01.mp3",
+    "name": "I see ya",
     "tags": ["JOE"],
-    "duration": 1.306083
+    "duration": 0.679167
+  },
+  {
+    "file": "joe-I see you-2015-01.mp3",
+    "name": "I see you",
+    "tags": ["JOE"],
+    "duration": 1.044875
+  },
+  {
+    "file": "joe-K C MO-2015-01.mp3",
+    "name": "K C MO",
+    "tags": ["JOE"],
+    "duration": 1.671833
+  },
+  {
+    "file": "joe-ahhh-2015-01.mp3",
+    "name": "Ahhh",
+    "tags": ["JOE"],
+    "duration": 1.201625
   },
   {
     "file": "joe-airsoft-2015-01.mp3",
@@ -420,10 +510,64 @@
     "duration": 0.600792
   },
   {
+    "file": "joe-and uh thats good-2015-01.mp3",
+    "name": "And uh that's good",
+    "tags": ["JOE"],
+    "duration": 1.22775
+  },
+  {
+    "file": "joe-and uh-2015-01.mp3",
+    "name": "And uh",
+    "tags": ["JOE"],
+    "duration": 0.548542
+  },
+  {
     "file": "joe-arrround-2015-01.mp3",
     "name": "Arrround",
     "tags": ["JOE"],
     "duration": 1.1755
+  },
+  {
+    "file": "joe-awesome-2015-01.mp3",
+    "name": "Awesome!",
+    "tags": ["JOE"],
+    "duration": 1.071
+  },
+  {
+    "file": "joe-aww but thats more fun-2015-01.mp3",
+    "name": "Aww, but that's more fun!",
+    "tags": ["JOE"],
+    "duration": 1.671833
+  },
+  {
+    "file": "joe-aww yea-2015-01.mp3",
+    "name": "Aww yea",
+    "tags": ["JOE"],
+    "duration": 0.783667
+  },
+  {
+    "file": "joe-aww-2015-01.mp3",
+    "name": "Aww",
+    "tags": ["JOE"],
+    "duration": 0.653042
+  },
+  {
+    "file": "joe-be a boss-2015-01.mp3",
+    "name": "Be a boss!",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.862042
+  },
+  {
+    "file": "joe-bum bum budum-2015-01.mp3",
+    "name": "Bum bum budum",
+    "tags": ["JOE", "MUSICAL"],
+    "duration": 5.381208
+  },
+  {
+    "file": "joe-come over here-2015-01.mp3",
+    "name": "Come over here",
+    "tags": ["JOE"],
+    "duration": 0.470167
   },
   {
     "file": "joe-crappy double jump-2015-01.mp3",
@@ -444,364 +588,16 @@
     "duration": 3.970583
   },
   {
-    "file": "joe-hes right above you-2015-01.mp3",
-    "name": "He's right above you",
+    "file": "joe-fun-2015-01.mp3",
+    "name": "Fun",
     "tags": ["JOE"],
-    "duration": 0.783667
+    "duration": 0.496292
   },
   {
-    "file": "joe-I can see all of them-2015-01.mp3",
-    "name": "I can see all of them",
+    "file": "joe-gang-2015-01.mp3",
+    "name": "Gang",
     "tags": ["JOE"],
-    "duration": 1.071
-  },
-  {
-    "file": "joe-I dont-2015-01.mp3",
-    "name": "I don't",
-    "tags": ["JOE"],
-    "duration": 0.365708
-  },
-  {
-    "file": "joe-I probably wouldnt-2015-01.mp3",
-    "name": "I probably wouldn't",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.91425
-  },
-  {
-    "file": "joe-im dead-2015-01.mp3",
-    "name": "I'm dead",
-    "tags": ["JOE", "HOT"],
-    "duration": 1.149375
-  },
-  {
-    "file": "joe-jump-2015-01.mp3",
-    "name": "Jump",
-    "tags": ["JOE"],
-    "duration": 0.339583
-  },
-  {
-    "file": "joe-nope-2015-01.mp3",
-    "name": "Nope",
-    "tags": ["JOE"],
-    "duration": 0.261208
-  },
-  {
-    "file": "joe-oh wow airsoft-2015-01.mp3",
-    "name": "Oh wow, Airsoft",
-    "tags": ["JOE"],
-    "duration": 0.940375
-  },
-  {
-    "file": "joe-oooh OOOH-2015-01.mp3",
-    "name": "oooh OOOH",
-    "tags": ["JOE"],
-    "duration": 1.515083
-  },
-  {
-    "file": "joe-opp he fell-2015-01.mp3",
-    "name": "Opp, he fell",
-    "tags": ["JOE"],
-    "duration": 0.835917
-  },
-  {
-    "file": "joe-rubbing hands-2015-01.mp3",
-    "name": "*rubbing hands*",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.940375
-  },
-  {
-    "file": "joe-theres a guy right above you and a guy right below you-2015-01.mp3",
-    "name": "There's a guy right above you and a guy right below you",
-    "tags": ["JOE"],
-    "duration": 1.776292
-  },
-  {
-    "file": "joe-those are the only people left-2015-01.mp3",
-    "name": "Those are the only people left",
-    "tags": ["JOE"],
-    "duration": 1.1755
-  },
-  {
-    "file": "joe-uhhh-2015-01.mp3",
-    "name": "Uhhh",
-    "tags": ["JOE"],
-    "duration": 1.384458
-  },
-  {
-    "file": "joe-wooow-2015-01.mp3",
-    "name": "Wooow",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.705292
-  },
-  {
-    "file": "joe-you can double jump you know-2015-01.mp3",
-    "name": "You can double jump you know",
-    "tags": ["JOE"],
-    "duration": 0.940375
-  },
-  {
-    "file": "joe-youre welcome-2015-01.mp3",
-    "name": "You're welcome",
-    "tags": ["JOE", "HOT"],
     "duration": 0.679167
-  },
-  {
-    "file": "joe-ahhh-2015-01.mp3",
-    "name": "Ahhh",
-    "tags": ["JOE"],
-    "duration": 1.201625
-  },
-  {
-    "file": "joe-aww-2015-01.mp3",
-    "name": "Aww",
-    "tags": ["JOE"],
-    "duration": 0.653042
-  },
-  {
-    "file": "joe-hello-2015-01.mp3",
-    "name": "Hello?",
-    "tags": ["JOE"],
-    "duration": 0.365708
-  },
-  {
-    "file": "joe-laugh-2015-01.mp3",
-    "name": "*laugh*",
-    "tags": ["JOE", "LAUGH", "HOT"],
-    "duration": 0.548542
-  },
-  {
-    "file": "joe-nice-2015-01.mp3",
-    "name": "Nice",
-    "tags": ["JOE"],
-    "duration": 0.653042
-  },
-  {
-    "file": "joe-no-2015-01.mp3",
-    "name": "No",
-    "tags": ["JOE"],
-    "duration": 0.653042
-  },
-  {
-    "file": "joe-nothin-2015-01.mp3",
-    "name": "Nothin",
-    "tags": ["JOE"],
-    "duration": 0.470167
-  },
-  {
-    "file": "joe-nothing at all-2015-01.mp3",
-    "name": "Nothing at all ...",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.940375
-  },
-  {
-    "file": "joe-oh gosh-2015-01.mp3",
-    "name": "Oh gosh",
-    "tags": ["JOE"],
-    "duration": 1.097125
-  },
-  {
-    "file": "joe-oh this is going to be great-2015-01.mp3",
-    "name": "Oh, this is going to be great",
-    "tags": ["JOE"],
-    "duration": 0.9665
-  },
-  {
-    "file": "joe-that just depends-2015-01.mp3",
-    "name": "That just depends",
-    "tags": ["JOE"],
-    "duration": 1.044875
-  },
-  {
-    "file": "joe-that seems great-2015-01.mp3",
-    "name": "That seems great",
-    "tags": ["JOE"],
-    "duration": 1.28
-  },
-  {
-    "file": "joe-yea ok-2015-01.mp3",
-    "name": "Yea ok",
-    "tags": ["JOE"],
-    "duration": 0.470167
-  },
-  {
-    "file": "joe-youre welcome-2015-02.mp3",
-    "name": "You're welcome",
-    "tags": ["JOE"],
-    "duration": 0.653042
-  },
-  {
-    "file": "joe-5 minute break-2015-01.mp3",
-    "name": "5 minute break",
-    "tags": ["JOE"],
-    "duration": 0.731417
-  },
-  {
-    "file": "joe-be a boss-2015-01.mp3",
-    "name": "Be a boss!",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.862042
-  },
-  {
-    "file": "joe-G G-2015-01.mp3",
-    "name": "G G",
-    "tags": ["JOE"],
-    "duration": 0.705292
-  },
-  {
-    "file": "joe-hilarious-2015-01.mp3",
-    "name": "Hilarious",
-    "tags": ["JOE"],
-    "duration": 0.940375
-  },
-  {
-    "file": "joe-I love to kill people-2015-01.mp3",
-    "name": "I love to kill people",
-    "tags": ["JOE", "HOT"],
-    "duration": 1.201625
-  },
-  {
-    "file": "joe-its slightly delayed-2015-01.mp3",
-    "name": "It's slightly delayed",
-    "tags": ["JOE"],
-    "duration": 1.828542
-  },
-  {
-    "file": "joe-john cena theme-2015-01.mp3",
-    "name": "*John Cena Theme*",
-    "tags": ["JOE", "MUSICAL"],
-    "duration": 1.906917
-  },
-  {
-    "file": "joe-laugh-2015-02.mp3",
-    "name": "*laugh*",
-    "tags": ["JOE", "LAUGH"],
-    "duration": 0.91425
-  },
-  {
-    "file": "joe-next time I break-2015-01.mp3",
-    "name": "Next time I break",
-    "tags": ["JOE", "HOT"],
-    "duration": 1.1755
-  },
-  {
-    "file": "joe-oh fun-2015-01.mp3",
-    "name": "Oh fun",
-    "tags": ["JOE"],
-    "duration": 0.600792
-  },
-  {
-    "file": "joe-oh yea-2015-01.mp3",
-    "name": "Oh yea",
-    "tags": ["JOE"],
-    "duration": 0.339583
-  },
-  {
-    "file": "joe-pfff you kidding me-2015-01.mp3",
-    "name": "Pfff! You kidding me?",
-    "tags": ["JOE"],
-    "duration": 1.071
-  },
-  {
-    "file": "joe-probably could use some more soda though-2015-01.mp3",
-    "name": "Probably could use some more soda, though",
-    "tags": ["JOE"],
-    "duration": 1.802417
-  },
-  {
-    "file": "joe-probably go get another can-2015-01.mp3",
-    "name": "Probably go get another can",
-    "tags": ["JOE"],
-    "duration": 1.01875
-  },
-  {
-    "file": "joe-so much freaking hype-2015-01.mp3",
-    "name": "So much freaking hype!",
-    "tags": ["JOE", "HOT"],
-    "duration": 1.985292
-  },
-  {
-    "file": "joe-what is going on back there-2015-01.mp3",
-    "name": "What is going on back there?",
-    "tags": ["JOE"],
-    "duration": 1.828542
-  },
-  {
-    "file": "joe-what is going on-2015-01.mp3",
-    "name": "What is going on?",
-    "tags": ["JOE"],
-    "duration": 1.28
-  },
-  {
-    "file": "joe-woah that was fun-2015-01.mp3",
-    "name": "Woah, that was fun!",
-    "tags": ["JOE"],
-    "duration": 0.862042
-  },
-  {
-    "file": "joe-wow-2015-01.mp3",
-    "name": "Wow",
-    "tags": ["JOE"],
-    "duration": 0.809792
-  },
-  {
-    "file": "joe-yourself-2015-01.mp3",
-    "name": "Yourself!",
-    "tags": ["JOE"],
-    "duration": 0.9665
-  },
-  {
-    "file": "joe-4 years or so-2015-01.mp3",
-    "name": "4 years or so",
-    "tags": ["JOE"],
-    "duration": 0.862042
-  },
-  {
-    "file": "joe-and uh-2015-01.mp3",
-    "name": "And uh",
-    "tags": ["JOE"],
-    "duration": 0.548542
-  },
-  {
-    "file": "joe-ho hooo-2015-01.mp3",
-    "name": "Ho hooo",
-    "tags": ["JOE"],
-    "duration": 1.1755
-  },
-  {
-    "file": "joe-in like a month-2015-01.mp3",
-    "name": "In like a month",
-    "tags": ["JOE"],
-    "duration": 0.731417
-  },
-  {
-    "file": "joe-its a corndog-2015-01.mp3",
-    "name": "It's a corndog",
-    "tags": ["JOE"],
-    "duration": 1.436708
-  },
-  {
-    "file": "joe-next-2015-01.mp3",
-    "name": "Next",
-    "tags": ["JOE"],
-    "duration": 0.470167
-  },
-  {
-    "file": "joe-uhhh-2015-02.mp3",
-    "name": "Uhhh",
-    "tags": ["JOE"],
-    "duration": 1.22775
-  },
-  {
-    "file": "joe-aww yea-2015-01.mp3",
-    "name": "Aww yea",
-    "tags": ["JOE"],
-    "duration": 0.783667
-  },
-  {
-    "file": "joe-come over here-2015-01.mp3",
-    "name": "Come over here",
-    "tags": ["JOE"],
-    "duration": 0.470167
   },
   {
     "file": "joe-get em airsoft-2015-01.mp3",
@@ -822,16 +618,46 @@
     "duration": 0.339583
   },
   {
-    "file": "joe-I see ya-2015-01.mp3",
-    "name": "I see ya",
+    "file": "joe-growl-2015-01.mp3",
+    "name": "*Growl*",
     "tags": ["JOE"],
-    "duration": 0.679167
+    "duration": 1.384458
   },
   {
-    "file": "joe-I see you-2015-01.mp3",
-    "name": "I see you",
+    "file": "joe-hello-2015-01.mp3",
+    "name": "Hello?",
     "tags": ["JOE"],
-    "duration": 1.044875
+    "duration": 0.365708
+  },
+  {
+    "file": "joe-hes right above you-2015-01.mp3",
+    "name": "He's right above you",
+    "tags": ["JOE"],
+    "duration": 0.783667
+  },
+  {
+    "file": "joe-hey airsoft where are you-2015-01.mp3",
+    "name": "Hey Airsoft! Where are you?",
+    "tags": ["JOE"],
+    "duration": 1.384458
+  },
+  {
+    "file": "joe-hilarious-2015-01.mp3",
+    "name": "Hilarious",
+    "tags": ["JOE"],
+    "duration": 0.940375
+  },
+  {
+    "file": "joe-ho hooo-2015-01.mp3",
+    "name": "Ho hooo",
+    "tags": ["JOE"],
+    "duration": 1.1755
+  },
+  {
+    "file": "joe-hurrmmph-2015-01.mp3",
+    "name": "Hurrmph",
+    "tags": ["JOE"],
+    "duration": 1.985292
   },
   {
     "file": "joe-ill build-2015-01.mp3",
@@ -846,10 +672,40 @@
     "duration": 0.731417
   },
   {
+    "file": "joe-im dead-2015-01.mp3",
+    "name": "I'm dead",
+    "tags": ["JOE", "HOT"],
+    "duration": 1.149375
+  },
+  {
+    "file": "joe-im surprised he hasnt changed it yet-2015-01.mp3",
+    "name": "I'm surprised he hasn't changed it yet",
+    "tags": ["JOE"],
+    "duration": 1.619583
+  },
+  {
+    "file": "joe-in like a month-2015-01.mp3",
+    "name": "In like a month",
+    "tags": ["JOE"],
+    "duration": 0.731417
+  },
+  {
+    "file": "joe-its a corndog-2015-01.mp3",
+    "name": "It's a corndog",
+    "tags": ["JOE"],
+    "duration": 1.436708
+  },
+  {
     "file": "joe-its not really doing anything-2015-01.mp3",
     "name": "It's not really doing anything",
     "tags": ["JOE"],
     "duration": 0.940375
+  },
+  {
+    "file": "joe-its slightly delayed-2015-01.mp3",
+    "name": "It's slightly delayed",
+    "tags": ["JOE"],
+    "duration": 1.828542
   },
   {
     "file": "joe-ive got a bunch of stuff-2015-01.mp3",
@@ -864,16 +720,28 @@
     "duration": 0.496292
   },
   {
-    "file": "joe-where are you-2015-01.mp3",
-    "name": "Where are you?",
-    "tags": ["JOE", "HOT"],
-    "duration": 0.496292
+    "file": "joe-john cena theme-2015-01.mp3",
+    "name": "*John Cena Theme*",
+    "tags": ["JOE", "MUSICAL"],
+    "duration": 1.906917
   },
   {
-    "file": "joe-K C MO-2015-01.mp3",
-    "name": "K C MO",
+    "file": "joe-jump-2015-01.mp3",
+    "name": "Jump",
     "tags": ["JOE"],
-    "duration": 1.671833
+    "duration": 0.339583
+  },
+  {
+    "file": "joe-laugh-2015-01.mp3",
+    "name": "*laugh*",
+    "tags": ["JOE", "LAUGH", "HOT"],
+    "duration": 0.548542
+  },
+  {
+    "file": "joe-laugh-2015-02.mp3",
+    "name": "*laugh*",
+    "tags": ["JOE", "LAUGH"],
+    "duration": 0.91425
   },
   {
     "file": "joe-laugh-2015-03.mp3",
@@ -882,10 +750,46 @@
     "duration": 0.548542
   },
   {
+    "file": "joe-laugh-2015-04.mp3",
+    "name": "*laugh*",
+    "tags": ["JOE", "LAUGH"],
+    "duration": 1.776292
+  },
+  {
+    "file": "joe-lets do this-2015-01.mp3",
+    "name": "Let's do this!",
+    "tags": ["JOE"],
+    "duration": 1.01875
+  },
+  {
+    "file": "joe-lets go-2015-01.mp3",
+    "name": "Let's go!",
+    "tags": ["JOE"],
+    "duration": 0.548542
+  },
+  {
+    "file": "joe-little bit low man higher-2015-01.mp3",
+    "name": "Little bit low man. Higher!!",
+    "tags": ["JOE"],
+    "duration": 2.19425
+  },
+  {
     "file": "joe-live for glory or die-2015-01.mp3",
     "name": "Live for glory or die",
     "tags": ["JOE", "HOT"],
     "duration": 1.750167
+  },
+  {
+    "file": "joe-next time I break-2015-01.mp3",
+    "name": "Next time I break",
+    "tags": ["JOE", "HOT"],
+    "duration": 1.1755
+  },
+  {
+    "file": "joe-next-2015-01.mp3",
+    "name": "Next",
+    "tags": ["JOE"],
+    "duration": 0.470167
   },
   {
     "file": "joe-nice one airsoft-2015-01.mp3",
@@ -894,10 +798,64 @@
     "duration": 0.862042
   },
   {
+    "file": "joe-nice-2015-01.mp3",
+    "name": "Nice",
+    "tags": ["JOE"],
+    "duration": 0.653042
+  },
+  {
+    "file": "joe-no-2015-01.mp3",
+    "name": "No",
+    "tags": ["JOE"],
+    "duration": 0.653042
+  },
+  {
+    "file": "joe-nope-2015-01.mp3",
+    "name": "Nope",
+    "tags": ["JOE"],
+    "duration": 0.261208
+  },
+  {
     "file": "joe-not really-2015-01.mp3",
     "name": "Not really",
     "tags": ["JOE"],
     "duration": 0.653042
+  },
+  {
+    "file": "joe-nothin-2015-01.mp3",
+    "name": "Nothin",
+    "tags": ["JOE"],
+    "duration": 0.470167
+  },
+  {
+    "file": "joe-nothing at all-2015-01.mp3",
+    "name": "Nothing at all ...",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.940375
+  },
+  {
+    "file": "joe-obviously del thinks were giving people massages-2015-01.mp3",
+    "name": "Obviously del thinks were giving people massages",
+    "tags": ["JOE"],
+    "duration": 2.29875
+  },
+  {
+    "file": "joe-oh fun-2015-01.mp3",
+    "name": "Oh fun",
+    "tags": ["JOE"],
+    "duration": 0.600792
+  },
+  {
+    "file": "joe-oh gosh-2015-01.mp3",
+    "name": "Oh gosh",
+    "tags": ["JOE"],
+    "duration": 1.097125
+  },
+  {
+    "file": "joe-oh im on the edge-2015-01.mp3",
+    "name": "Oh I'm on the edge",
+    "tags": ["JOE"],
+    "duration": 0.9665
   },
   {
     "file": "joe-oh oh-2015-01.mp3",
@@ -906,10 +864,82 @@
     "duration": 0.365708
   },
   {
+    "file": "joe-oh this is going to be great-2015-01.mp3",
+    "name": "Oh, this is going to be great",
+    "tags": ["JOE"],
+    "duration": 0.9665
+  },
+  {
+    "file": "joe-oh wow airsoft-2015-01.mp3",
+    "name": "Oh wow, Airsoft",
+    "tags": ["JOE"],
+    "duration": 0.940375
+  },
+  {
+    "file": "joe-oh yea-2015-01.mp3",
+    "name": "Oh yea",
+    "tags": ["JOE"],
+    "duration": 0.339583
+  },
+  {
+    "file": "joe-ok how did I do that-2015-01.mp3",
+    "name": "Ok, how did I do that?",
+    "tags": ["JOE"],
+    "duration": 1.306083
+  },
+  {
     "file": "joe-ok-2015-01.mp3",
     "name": "Ok",
     "tags": ["JOE"],
     "duration": 0.365708
+  },
+  {
+    "file": "joe-ok-2015-02.mp3",
+    "name": "Ok",
+    "tags": ["JOE"],
+    "duration": 0.496292
+  },
+  {
+    "file": "joe-ooo ooo-2015-01.mp3",
+    "name": "Ooo ooo",
+    "tags": ["JOE"],
+    "duration": 0.574667
+  },
+  {
+    "file": "joe-oooh OOOH-2015-01.mp3",
+    "name": "oooh OOOH",
+    "tags": ["JOE"],
+    "duration": 1.515083
+  },
+  {
+    "file": "joe-opp he fell-2015-01.mp3",
+    "name": "Opp, he fell",
+    "tags": ["JOE"],
+    "duration": 0.835917
+  },
+  {
+    "file": "joe-perfect-2015-01.mp3",
+    "name": "Perfect!",
+    "tags": ["JOE"],
+    "duration": 0.862042
+  },
+  {
+    "file": "joe-pfff you kidding me-2015-01.mp3",
+    "name": "Pfff! You kidding me?",
+    "tags": ["JOE"],
+    "duration": 1.071
+  },
+  {
+    "file": "joe-probably could use some more soda though-2015-01.mp3",
+    "name": "Probably could use some more soda, though",
+    "tags": ["JOE"],
+    "duration": 1.802417
+  },
+  {
+    "file": "joe-probably go get another can-2015-01.mp3",
+    "name": "Probably go get another can",
+    "tags": ["JOE"],
+    "duration": 1.01875
   },
   {
     "file": "joe-put it on-2015-01.mp3",
@@ -918,40 +948,154 @@
     "duration": 0.417958
   },
   {
-    "file": "joe-1 dollar-2015-01.mp3",
-    "name": "1 Dollar",
+    "file": "joe-rubbing hands-2015-01.mp3",
+    "name": "*rubbing hands*",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.940375
+  },
+  {
+    "file": "joe-so much freaking hype-2015-01.mp3",
+    "name": "So much freaking hype!",
+    "tags": ["JOE", "HOT"],
+    "duration": 1.985292
+  },
+  {
+    "file": "joe-that just depends-2015-01.mp3",
+    "name": "That just depends",
     "tags": ["JOE"],
-    "duration": 0.91425
+    "duration": 1.044875
   },
   {
-    "file": "joe-bum bum budum-2015-01.mp3",
-    "name": "Bum bum budum",
-    "tags": ["JOE", "MUSICAL"],
-    "duration": 5.381208
-  },
-  {
-    "file": "joe-gang-2015-01.mp3",
-    "name": "Gang",
+    "file": "joe-that seems great-2015-01.mp3",
+    "name": "That seems great",
     "tags": ["JOE"],
-    "duration": 0.679167
+    "duration": 1.28
   },
   {
-    "file": "joe-im surprised he hasnt changed it yet-2015-01.mp3",
-    "name": "I'm surprised he hasn't changed it yet",
+    "file": "joe-theres a guy right above you and a guy right below you-2015-01.mp3",
+    "name": "There's a guy right above you and a guy right below you",
     "tags": ["JOE"],
-    "duration": 1.619583
-  },
-  {
-    "file": "joe-laugh-2015-04.mp3",
-    "name": "*laugh*",
-    "tags": ["JOE", "LAUGH"],
     "duration": 1.776292
+  },
+  {
+    "file": "joe-those are the only people left-2015-01.mp3",
+    "name": "Those are the only people left",
+    "tags": ["JOE"],
+    "duration": 1.1755
+  },
+  {
+    "file": "joe-trying to figure this out-2015-01.mp3",
+    "name": "Trying to figure this out",
+    "tags": ["JOE"],
+    "duration": 1.149375
+  },
+  {
+    "file": "joe-uhhh-2015-01.mp3",
+    "name": "Uhhh",
+    "tags": ["JOE"],
+    "duration": 1.384458
+  },
+  {
+    "file": "joe-uhhh-2015-02.mp3",
+    "name": "Uhhh",
+    "tags": ["JOE"],
+    "duration": 1.22775
+  },
+  {
+    "file": "joe-we got a lotta options-2015-01.mp3",
+    "name": "We got a lotta options",
+    "tags": ["JOE"],
+    "duration": 1.828542
+  },
+  {
+    "file": "joe-what game do you want to play-2015-01.mp3",
+    "name": "What game do you want to play",
+    "tags": ["JOE"],
+    "duration": 1.01875
+  },
+  {
+    "file": "joe-what is going on back there-2015-01.mp3",
+    "name": "What is going on back there?",
+    "tags": ["JOE"],
+    "duration": 1.828542
+  },
+  {
+    "file": "joe-what is going on-2015-01.mp3",
+    "name": "What is going on?",
+    "tags": ["JOE"],
+    "duration": 1.28
+  },
+  {
+    "file": "joe-where are you-2015-01.mp3",
+    "name": "Where are you?",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.496292
+  },
+  {
+    "file": "joe-woah that was fun-2015-01.mp3",
+    "name": "Woah, that was fun!",
+    "tags": ["JOE"],
+    "duration": 0.862042
+  },
+  {
+    "file": "joe-wooow-2015-01.mp3",
+    "name": "Wooow",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.705292
+  },
+  {
+    "file": "joe-wow-2015-01.mp3",
+    "name": "Wow",
+    "tags": ["JOE"],
+    "duration": 0.809792
+  },
+  {
+    "file": "joe-yea ok-2015-01.mp3",
+    "name": "Yea ok",
+    "tags": ["JOE"],
+    "duration": 0.470167
+  },
+  {
+    "file": "joe-yes they didnt loot his stuff-2015-01.mp3",
+    "name": "Yes they didn't loot his stuff",
+    "tags": ["JOE"],
+    "duration": 1.828542
+  },
+  {
+    "file": "joe-you can double jump you know-2015-01.mp3",
+    "name": "You can double jump you know",
+    "tags": ["JOE"],
+    "duration": 0.940375
   },
   {
     "file": "joe-you mean the shortcuts-2015-01.mp3",
     "name": "You mean the shortcuts?",
     "tags": ["JOE"],
     "duration": 1.306083
+  },
+  {
+    "file": "joe-youre welcome-2015-01.mp3",
+    "name": "You're welcome",
+    "tags": ["JOE", "HOT"],
+    "duration": 0.679167
+  },
+  {
+    "file": "joe-youre welcome-2015-02.mp3",
+    "name": "You're welcome",
+    "tags": ["JOE"],
+    "duration": 0.653042
+  },
+  {
+    "file": "joe-yourself-2015-01.mp3",
+    "name": "Yourself!",
+    "tags": ["JOE"],
+    "duration": 0.9665
+  },
+  {
+    "file": "robosheep-I dont know-2015-01.mp3",
+    "name": "I don't know",
+    "tags": ["ROBOSHEEP"],
+    "duration": 1.28
   },
   {
     "file": "robosheep-I will-2015-01.mp3",
@@ -966,30 +1110,6 @@
     "duration": 0.470167
   },
   {
-    "file": "robosheep-for the few people watching-2015-01.mp3",
-    "name": "For the few people watching",
-    "tags": ["ROBOSHEEP"],
-    "duration": 1.671833
-  },
-  {
-    "file": "robosheep-it just crashed-2015-01.mp3",
-    "name": "It just crashed",
-    "tags": ["ROBOSHEEP"],
-    "duration": 0.91425
-  },
-  {
-    "file": "robosheep-so-2015-01.mp3",
-    "name": "So!",
-    "tags": ["ROBOSHEEP"],
-    "duration": 0.548542
-  },
-  {
-    "file": "robosheep-uhhhm-2015-01.mp3",
-    "name": "Uhhhm",
-    "tags": ["ROBOSHEEP"],
-    "duration": 0.705292
-  },
-  {
     "file": "robosheep-bridge-2015-01.mp3",
     "name": "Bridge",
     "tags": ["ROBOSHEEP"],
@@ -1002,10 +1122,34 @@
     "duration": 0.705292
   },
   {
-    "file": "robosheep-I dont know-2015-01.mp3",
-    "name": "I don't know",
+    "file": "robosheep-for the few people watching-2015-01.mp3",
+    "name": "For the few people watching",
     "tags": ["ROBOSHEEP"],
-    "duration": 1.28
+    "duration": 1.671833
+  },
+  {
+    "file": "robosheep-it just crashed-2015-01.mp3",
+    "name": "It just crashed",
+    "tags": ["ROBOSHEEP"],
+    "duration": 0.91425
+  },
+  {
+    "file": "robosheep-sigh-2015-01.mp3",
+    "name": "*sigh*",
+    "tags": ["ROBOSHEEP", "HOT"],
+    "duration": 0.548542
+  },
+  {
+    "file": "robosheep-so-2015-01.mp3",
+    "name": "So!",
+    "tags": ["ROBOSHEEP"],
+    "duration": 0.548542
+  },
+  {
+    "file": "robosheep-uhhhm-2015-01.mp3",
+    "name": "Uhhhm",
+    "tags": ["ROBOSHEEP"],
+    "duration": 0.705292
   },
   {
     "file": "robosheep-we have that-2015-01.mp3",
@@ -1026,10 +1170,22 @@
     "duration": 0.313458
   },
   {
-    "file": "robosheep-sigh-2015-01.mp3",
-    "name": "*sigh*",
-    "tags": ["ROBOSHEEP", "HOT"],
-    "duration": 0.548542
+    "file": "sunshine-I cant personally speak for him-2015-01.mp3",
+    "name": "I can't personally speak for him",
+    "tags": ["SUNSHINE"],
+    "duration": 2.168125
+  },
+  {
+    "file": "sunshine-N M M-2015-01.mp3",
+    "name": "N M M",
+    "tags": ["SUNSHINE"],
+    "duration": 0.783667
+  },
+  {
+    "file": "sunshine-alright alright alright-2015-01.mp3",
+    "name": "Alright alright alright",
+    "tags": ["SUNSHINE"],
+    "duration": 0.862042
   },
   {
     "file": "sunshine-alright-2015-01.mp3",
@@ -1044,40 +1200,16 @@
     "duration": 0.940375
   },
   {
-    "file": "sunshine-N M M-2015-01.mp3",
-    "name": "N M M",
+    "file": "sunshine-bad news everyone-2015-01.mp3",
+    "name": "Bad news, everyone",
+    "tags": ["SUNSHINE"],
+    "duration": 1.28
+  },
+  {
+    "file": "sunshine-can I do both-2015-01.mp3",
+    "name": "Can I do both?",
     "tags": ["SUNSHINE"],
     "duration": 0.783667
-  },
-  {
-    "file": "sunshine-odd-2015-01.mp3",
-    "name": "Odd",
-    "tags": ["SUNSHINE"],
-    "duration": 0.600792
-  },
-  {
-    "file": "sunshine-please refrain from murdering-2015-01.mp3",
-    "name": "Please refrain from murdering",
-    "tags": ["SUNSHINE", "HOT"],
-    "duration": 1.933042
-  },
-  {
-    "file": "sunshine-po-tat-oes-2015-01.mp3",
-    "name": "Po-tat-oes",
-    "tags": ["SUNSHINE"],
-    "duration": 0.705292
-  },
-  {
-    "file": "sunshine-thats basically all you do-2015-01.mp3",
-    "name": "That's basically all you do",
-    "tags": ["SUNSHINE", "HOT"],
-    "duration": 1.410583
-  },
-  {
-    "file": "sunshine-yes-2015-01.mp3",
-    "name": "Yes",
-    "tags": ["SUNSHINE"],
-    "duration": 0.365708
   },
   {
     "file": "sunshine-dominated it-2015-01.mp3",
@@ -1086,112 +1218,22 @@
     "duration": 1.044875
   },
   {
-    "file": "sunshine-I cant personally speak for him-2015-01.mp3",
-    "name": "I can't personally speak for him",
-    "tags": ["SUNSHINE"],
-    "duration": 2.168125
-  },
-  {
     "file": "sunshine-it possibly will be fun-2015-01.mp3",
     "name": "It possibly will be fun",
     "tags": ["SUNSHINE"],
     "duration": 1.384458
   },
   {
-    "file": "sunshine-its pretty bad-2015-01.mp3",
-    "name": "It's pretty bad",
-    "tags": ["SUNSHINE"],
-    "duration": 0.9665
-  },
-  {
-    "file": "sunshine-strange horse-like creatures-2015-01.mp3",
-    "name": "Strange horse-like creatures",
-    "tags": ["SUNSHINE"],
-    "duration": 2.115917
-  },
-  {
-    "file": "sunshine-that is just-2015-01.mp3",
-    "name": "That is just",
-    "tags": ["SUNSHINE"],
-    "duration": 1.01875
-  },
-  {
-    "file": "sunshine-ummm-2015-01.mp3",
-    "name": "Ummm ...",
-    "tags": ["SUNSHINE"],
-    "duration": 0.574667
-  },
-  {
-    "file": "sunshine-yeah no you uh-2015-01.mp3",
-    "name": "Yeah no you uh",
-    "tags": ["SUNSHINE", "HOT"],
-    "duration": 1.28
-  },
-  {
-    "file": "sunshine-you have just given me a great idea sir-2015-01.mp3",
-    "name": "You have just given me a great idea, sir!",
-    "tags": ["SUNSHINE"],
-    "duration": 1.541208
-  },
-  {
-    "file": "sunshine-packet of gummy worms-2015-01.mp3",
-    "name": "Packet of gummy worms",
-    "tags": ["SUNSHINE"],
-    "duration": 0.783667
-  },
-  {
-    "file": "sunshine-potatoes-2015-01.mp3",
-    "name": "Potatoes",
-    "tags": ["SUNSHINE"],
-    "duration": 0.653042
-  },
-  {
-    "file": "sunshine-rectangular-2015-01.mp3",
-    "name": "Rectangular",
-    "tags": ["SUNSHINE"],
-    "duration": 0.862042
-  },
-  {
-    "file": "sunshine-tell me what you love-2015-01.mp3",
-    "name": "Tell me what you love",
-    "tags": ["SUNSHINE", "HOT"],
-    "duration": 1.149375
-  },
-  {
-    "file": "sunshine-this is my guy-2015-01.mp3",
-    "name": "This is my guy",
-    "tags": ["SUNSHINE"],
-    "duration": 0.731417
-  },
-  {
-    "file": "sunshine-you cant tell me how to not crash-2015-01.mp3",
-    "name": "You can't tell me how to not crash",
-    "tags": ["SUNSHINE"],
-    "duration": 1.201625
-  },
-  {
-    "file": "sunshine-you have everything really-2015-01.mp3",
-    "name": "You have everything, really",
-    "tags": ["SUNSHINE", "HOT"],
-    "duration": 0.9665
-  },
-  {
-    "file": "sunshine-alright alright alright-2015-01.mp3",
-    "name": "Alright alright alright",
-    "tags": ["SUNSHINE"],
-    "duration": 0.862042
-  },
-  {
-    "file": "sunshine-bad news everyone-2015-01.mp3",
-    "name": "Bad news, everyone",
-    "tags": ["SUNSHINE"],
-    "duration": 1.28
-  },
-  {
     "file": "sunshine-it was really awesome-2015-01.mp3",
     "name": "It was really awesome",
     "tags": ["SUNSHINE"],
     "duration": 1.044875
+  },
+  {
+    "file": "sunshine-its pretty bad-2015-01.mp3",
+    "name": "It's pretty bad",
+    "tags": ["SUNSHINE"],
+    "duration": 0.9665
   },
   {
     "file": "sunshine-ladies and gentlemen-2015-01.mp3",
@@ -1212,10 +1254,64 @@
     "duration": 0.679167
   },
   {
-    "file": "sunshine-can I do both-2015-01.mp3",
-    "name": "Can I do both?",
+    "file": "sunshine-odd-2015-01.mp3",
+    "name": "Odd",
+    "tags": ["SUNSHINE"],
+    "duration": 0.600792
+  },
+  {
+    "file": "sunshine-packet of gummy worms-2015-01.mp3",
+    "name": "Packet of gummy worms",
     "tags": ["SUNSHINE"],
     "duration": 0.783667
+  },
+  {
+    "file": "sunshine-please refrain from murdering-2015-01.mp3",
+    "name": "Please refrain from murdering",
+    "tags": ["SUNSHINE", "HOT"],
+    "duration": 1.933042
+  },
+  {
+    "file": "sunshine-po-tat-oes-2015-01.mp3",
+    "name": "Po-tat-oes",
+    "tags": ["SUNSHINE"],
+    "duration": 0.705292
+  },
+  {
+    "file": "sunshine-potatoes-2015-01.mp3",
+    "name": "Potatoes",
+    "tags": ["SUNSHINE"],
+    "duration": 0.653042
+  },
+  {
+    "file": "sunshine-rectangular-2015-01.mp3",
+    "name": "Rectangular",
+    "tags": ["SUNSHINE"],
+    "duration": 0.862042
+  },
+  {
+    "file": "sunshine-strange horse-like creatures-2015-01.mp3",
+    "name": "Strange horse-like creatures",
+    "tags": ["SUNSHINE"],
+    "duration": 2.115917
+  },
+  {
+    "file": "sunshine-tell me what you love-2015-01.mp3",
+    "name": "Tell me what you love",
+    "tags": ["SUNSHINE", "HOT"],
+    "duration": 1.149375
+  },
+  {
+    "file": "sunshine-that is just-2015-01.mp3",
+    "name": "That is just",
+    "tags": ["SUNSHINE"],
+    "duration": 1.01875
+  },
+  {
+    "file": "sunshine-thats basically all you do-2015-01.mp3",
+    "name": "That's basically all you do",
+    "tags": ["SUNSHINE", "HOT"],
+    "duration": 1.410583
   },
   {
     "file": "sunshine-theres 4 people watching-2015-01.mp3",
@@ -1224,9 +1320,51 @@
     "duration": 0.91425
   },
   {
+    "file": "sunshine-this is my guy-2015-01.mp3",
+    "name": "This is my guy",
+    "tags": ["SUNSHINE"],
+    "duration": 0.731417
+  },
+  {
+    "file": "sunshine-ummm-2015-01.mp3",
+    "name": "Ummm ...",
+    "tags": ["SUNSHINE"],
+    "duration": 0.574667
+  },
+  {
     "file": "sunshine-what are you guys playing-2015-01.mp3",
     "name": "What are you guys playing?",
     "tags": ["SUNSHINE"],
     "duration": 0.574667
+  },
+  {
+    "file": "sunshine-yeah no you uh-2015-01.mp3",
+    "name": "Yeah no you uh",
+    "tags": ["SUNSHINE", "HOT"],
+    "duration": 1.28
+  },
+  {
+    "file": "sunshine-yes-2015-01.mp3",
+    "name": "Yes",
+    "tags": ["SUNSHINE"],
+    "duration": 0.365708
+  },
+  {
+    "file": "sunshine-you cant tell me how to not crash-2015-01.mp3",
+    "name": "You can't tell me how to not crash",
+    "tags": ["SUNSHINE"],
+    "duration": 1.201625
+  },
+  {
+    "file": "sunshine-you have everything really-2015-01.mp3",
+    "name": "You have everything, really",
+    "tags": ["SUNSHINE", "HOT"],
+    "duration": 0.9665
+  },
+  {
+    "file": "sunshine-you have just given me a great idea sir-2015-01.mp3",
+    "name": "You have just given me a great idea, sir!",
+    "tags": ["SUNSHINE"],
+    "duration": 1.541208
   }
 ]
