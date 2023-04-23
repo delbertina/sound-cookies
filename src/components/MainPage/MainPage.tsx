@@ -164,11 +164,8 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
     if (!selectedFilters.length) {
       returnSounds = this.props.sounds;
     } else {
-      // Only looks for 1 match, future work to switch to AND instead of OR
       returnSounds = this.props.sounds.filter((sound) =>
-        selectedFilters
-          .map((filter) => filter.tag)
-          .some((tag) => sound.tags.indexOf(tag) >= 0)
+        selectedFilters.every((tag) => sound.tags.includes(tag.tag))
       );
     }
 
@@ -186,9 +183,35 @@ class MainPage extends React.Component<MainPageProps, MainPageState> {
       returnSounds.sort((a, b) => a.duration - b.duration);
     }
 
+    const uniqueTags = returnSounds
+      .map((item) => item.tags)
+      .reduce((accumulator, value) => accumulator.concat(value), [])
+      .filter((value, index, array) => array.indexOf(value) === index)
+      .map((value) => ({
+        tag: value,
+        tagSelected: false,
+      }));
+
+    let filteredTags = [];
+
+    if (!!selectedFilters.length) {
+      filteredTags = [
+        ...uniqueTags.filter(
+          (item) => !selectedFilters.find((tag) => tag.tag === item.tag)
+        ),
+        ...selectedFilters,
+      ].sort((a, b) =>
+        a.tag.localeCompare(b.tag, "en", { sensitivity: "base" })
+      );
+    } else {
+      filteredTags = [...uniqueTags].sort((a, b) =>
+        a.tag.localeCompare(b.tag, "en", { sensitivity: "base" })
+      );
+    }
+
     if (!this.state.sortDirection) returnSounds.reverse();
 
-    this.setState({ soundData: returnSounds });
+    this.setState({ soundData: returnSounds, filterData: filteredTags });
   }
 
   toggleSort(): void {
