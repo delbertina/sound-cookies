@@ -45,7 +45,7 @@ function SoundButton(props: SoundButtonProps) {
         onClick={handleClick}
         className="sound-button"
       >
-        <div className="sound-button-play">{isOff.state ? "⏵︎" : "⏸︎"}</div>
+        <div className="sound-button-play">{isOff.state ? "▶" : "⏸"}</div>
         <div className="sound-button-emoji">
           {props.sound.tags.map(
             (tag) => TagEmojis[tag as keyof typeof TagEmojis] ?? DefaultEmoji
