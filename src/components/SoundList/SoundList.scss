@@ -25,6 +25,12 @@
   mask: var(--mask);
 }
 
+@media only screen and (max-width: 1080px) {
+  .sound-button-list {
+    width: 100%;
+  }
+} 
+
 .sound-list-dummy {
   min-height: 32px;
   width: 100%;

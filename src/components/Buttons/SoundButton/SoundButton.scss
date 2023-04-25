@@ -1,9 +1,13 @@
 .sound-button {
     margin: 8px !important;
+    padding: 6px !important;
     min-width: 200px !important;
     max-width: 200px;
     white-space: nowrap;
     justify-content: start !important;
+    .sound-button-play {
+      display: flex;
+    }
     > .sound-button-name {
       overflow: hidden;
       white-space: nowrap;
@@ -14,3 +18,13 @@
       margin-left: auto;
     }
   }
+
+  @media only screen and (max-width: 600px) {
+    .sound-button {
+      min-width: 150px !important;
+      max-width: 150px;
+    }
+    .sound-button-emoji {
+      display: none;
+    }
+  } 

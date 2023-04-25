@@ -5,6 +5,8 @@ import useSound from "use-sound";
 import { getSoundAssetPath, msToTime } from "../../../common/string-handling";
 import { DefaultEmoji, SoundData, TagEmojis } from "../../../types/sound-types";
 import SoundButtonHover from "../SoundButtonHover/SoundButtonHover";
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import PauseIcon from '@mui/icons-material/Pause';
 
 export interface SoundButtonProps {
   sound: SoundData;
@@ -45,7 +47,7 @@ function SoundButton(props: SoundButtonProps) {
         onClick={handleClick}
         className="sound-button"
       >
-        <div className="sound-button-play">{isOff.state ? "▶" : "⏸"}</div>
+        <div className="sound-button-play">{isOff.state ? <PlayArrowIcon/> : <PauseIcon/>}</div>
         <div className="sound-button-emoji">
           {props.sound.tags.map(
             (tag) => TagEmojis[tag as keyof typeof TagEmojis] ?? DefaultEmoji
