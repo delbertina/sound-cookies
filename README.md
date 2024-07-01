@@ -6,6 +6,20 @@ A react app for interacting with some funny sound clips that are a bit larger th
 
 [Example link for a saved selection](https://delbertina.github.io/sound-cookies/?data=eyJzZWxlY3RlZFNvdW5kcyI6W3siZmlsZSI6ImpvZS13aGVyZSBhcmUgeW91LTIwMTUtMDEubXAzIiwibmFtZSI6IldoZXJlIGFyZSB5b3U/IiwidGFncyI6WyJKT0UiLCJIT1QiXSwiZHVyYXRpb24iOjAuNDk2MjkyfSx7ImZpbGUiOiJqb2UtY29tZSBvdmVyIGhlcmUtMjAxNS0wMS5tcDMiLCJuYW1lIjoiQ29tZSBvdmVyIGhlcmUiLCJ0YWdzIjpbIkpPRSJdLCJkdXJhdGlvbiI6MC40NzAxNjd9LHsiZmlsZSI6ImpvZS1hbmQgdWgtMjAxNS0wMS5tcDMiLCJuYW1lIjoiQW5kIHVoIiwidGFncyI6WyJKT0UiXSwiZHVyYXRpb24iOjAuNTQ4NTQyfSx7ImZpbGUiOiJqb2UtYmUgYSBib3NzLTIwMTUtMDEubXAzIiwibmFtZSI6IkJlIGEgYm9zcyEiLCJ0YWdzIjpbIkpPRSIsIkhPVCJdLCJkdXJhdGlvbiI6MC44NjIwNDJ9LHsiZmlsZSI6ImpvZS1ydWJiaW5nIGhhbmRzLTIwMTUtMDEubXAzIiwibmFtZSI6IipydWJiaW5nIGhhbmRzKiIsInRhZ3MiOlsiSk9FIiwiSE9UIl0sImR1cmF0aW9uIjowLjk0MDM3NX1dfQ==)
 
+## Soundboard Mode (default for normal page visits)
+![image](https://github.com/delbertina/sound-cookies/assets/6349928/2b8430b5-b242-4122-97db-fd8e57592a07)
+
+
+## Selection Mode (default for saved selection links)
+![image](https://github.com/delbertina/sound-cookies/assets/6349928/1918eb0e-2296-4821-8463-d94720073099)
+
+## Menu to toggle display of features
+![image](https://github.com/delbertina/sound-cookies/assets/6349928/3362f234-6ec7-4838-82dd-b19d5de55b14)
+
+## Edit variable silence length
+![image](https://github.com/delbertina/sound-cookies/assets/6349928/8a6803a6-3060-49bc-bc42-f13d7828dfba)
+
+
 # Goal Features
 
 - Drag and drop sounds into selection area
